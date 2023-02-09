@@ -5,12 +5,13 @@ import longLine from "../../assets/line-2.png";
 import HamburgerButton from "./HamburgerButton";
 import { useState } from "react";
 import Header from "./Header";
+import Overlay from "./Overlay";
 const Homepage = () => {
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
     return (
         <div className="homepage-wrapper page-wrapper">
             <Header />
-            <div className="sidebar-wrapper">
+            <div className={`sidebar-wrapper ${isSideBarOpen ? "inverted" : ""}`}>
                 <HamburgerButton isOpen={isSideBarOpen} onClick={() => setIsSideBarOpen(!isSideBarOpen)} />
                 <div className="sidebar-countries">
                     <p>USA</p>
@@ -19,7 +20,7 @@ const Homepage = () => {
                 </div>
                 <div className="sidebar-discover">
                     <p>discover</p>
-                    <a hreaf="#">
+                    <a hreaf="/#">
                         <img alt="arrow" src={arrow} />
                     </a>
                 </div>
@@ -46,6 +47,7 @@ const Homepage = () => {
                     <p>04</p>
                 </div>
             </footer>
+            <Overlay isOpen={isSideBarOpen} />
         </div>
     );
 };

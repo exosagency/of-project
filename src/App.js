@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import Homepage from './pages/homepage';
+import Homepage from './components/homepage';
 import './styles/main.scss';
 function App() {
   return (

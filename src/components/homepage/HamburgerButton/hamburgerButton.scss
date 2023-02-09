@@ -32,7 +32,15 @@
     margin: 6px 0;
     transition: 0.4s;
 }
-
+.change{
+    background-color: $gray-hamburger;
+    .hamburger-button {
+        background-color: $gray-hamburger;
+    }
+    div{
+        background-color: $white;
+    }
+}
 .change .bar1 {
     transform: translate(0, 8px) rotate(-45deg);
 }

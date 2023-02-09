@@ -1,5 +1,6 @@
 @import '__global.scss';
 
-@import '../pages/homepage/homepage';
-@import '../pages/homepage/header/header.scss';
-@import '../pages//homepage/HamburgerButton/hamburgerButton.scss'
+@import '../components/homepage/homepage';
+@import '../components/homepage/header/header.scss';
+@import '../components//homepage/HamburgerButton/hamburgerButton.scss';
+@import '../components/homepage/Overlay/overlay.scss';

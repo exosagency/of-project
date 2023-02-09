@@ -17,9 +17,9 @@ body {
 
 .sidebar-wrapper {
     width: 42px;
-    z-index: 2;
+    left: calc(100vw - 42px);
+    z-index: 1;
     position: absolute;
-    right: 0;
     top: 0;
     padding: 145px 0 80px;
     height: 100vh;
@@ -30,7 +30,25 @@ body {
     a {
         cursor: pointer;
     }
+    &.inverted {
+        background-color: $white;
+        border-color: $inverted-border-color;
+        width: 42px;
+        left: calc(100vw - 42px);
+        @media (min-width: map-get($grid-breakpoints, sm)) {
+            left: calc(100vw - 80px);
+            width: 80px;
+        }
+        p {
+            color: $black;
+        }
+
+        img {
+            filter: invert(100%);
+        }
+    }
     @media (min-width: map-get($grid-breakpoints, sm)) {
+        left: calc(100vw - 82px);
         width: 82px;
     }
 }
@@ -44,16 +62,18 @@ body {
 }
 
 .sidebar-countries {
-    padding: 0 20px;
     img {
         position: relative;
         left: 18px;
         margin: 2.5rem 0;
     }
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+        padding: 0 20px;
+    }
 }
 
 .sidebar-discover {
-    padding: 0 20px;
     img {
         position: relative;
         left: 13px;
@@ -62,6 +82,9 @@ body {
     p {
         letter-spacing: 0.4rem;
     }
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+        padding: 0 20px;
+    }
 }
 
 .homepage-main {
@@ -69,7 +92,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 108px 6.66% 0;
+    padding: 130px 6.66% 0;
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+        padding: 108px 6.66% 0;
+    }
 
     h1 {
         font-size: 3.2rem;
@@ -150,13 +177,22 @@ body {
     height: 84px;
     width: 100vw;
     border-top: 2px solid $gray-border;
-    padding: 0 50px;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+        background-color: unset;
+        padding: 0 50px;
+    }
     > div {
         height: 80px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         max-width: 280px;
+        @media (min-width: map-get($grid-breakpoints, sm)) {
+            padding: 0 50px;
+            max-width: 360px;
+        }
     }
     img {
         position: relative;
