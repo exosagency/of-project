@@ -1,0 +1,33 @@
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+);
+$font-inter: "Inter", sans-serif;
+
+// $gray-border: #474746;
+$gray-border: rgba(255, 255, 255, 0.2);
+$gray-hamburger: #1f1f1f;
+$gray-text: #727272;
+$black: #000;
+$white: #fff;
+html {
+    font-size: 10px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+#root {
+    display: flex;
+    justify-content: center;
+}
+body,
+* {
+    box-sizing: border-box;
+    font-family: $font-inter;
+}
