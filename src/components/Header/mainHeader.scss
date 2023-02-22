@@ -1,0 +1,60 @@
+.main-header{
+    color: $white;
+    padding: 2.4rem;
+    padding-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: $dark-background;
+    max-width: 1240px;
+    margin: 0 auto;
+    h1{
+        font-size: 4rem;
+        line-height: 6rem;
+        margin-top: 6.8rem;
+        margin-bottom: 2.4rem;
+        text-align: center;
+        @media (min-width: map-get($grid-breakpoints, sm)) {
+            font-size: 6rem;
+            line-height: 8rem;
+        }
+    }
+
+    .logo-wrapper{
+        position: absolute;
+        left: 5rem;
+        top: 2.4rem;
+    }
+    .subtitle{
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+        max-width: 600px;
+        text-align: center;
+        position: relative;
+        @media (min-width: map-get($grid-breakpoints, sm)) {
+            font-size: 2rem;
+            line-height: 3.2rem;
+        }
+    }
+    .subtitle::after{
+        content: '';
+        position: absolute;
+        width: 3.2rem;
+        height: 0.4rem;
+        background-color: $subtitle-underline;
+        bottom: -2.2rem;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+.main-header::after{
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 0.2rem;
+    background-color: $subtitle-underline;
+    bottom: -2px;
+    left: 50%;
+    transform: translate(-50%);
+}

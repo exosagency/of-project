@@ -1,0 +1,37 @@
+.services-nav-wrapper {
+    width: 100%;
+    background-color: $dark-background;
+}
+.services-nav {
+    display: flex;
+    max-width: 1240px;
+    margin: 0 auto;
+    button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20%;
+        padding: 2.5rem;
+        color: $white;
+        background-color: $dark-background;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        border: 0;
+        cursor: pointer;
+        span{
+            display: none;
+            @media (min-width: map-get($grid-breakpoints, sm)) {
+                display: inline-block;
+            }
+        }
+    }
+    button:hover {
+        background-color: $subtitle-underline;
+    }
+    img {
+        max-width: 45px;
+        color: $white;
+        filter: invert(0.5);
+        padding-bottom: 1rem;
+    }
+}
