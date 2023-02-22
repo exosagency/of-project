@@ -12,6 +12,8 @@ $font-inter: "Inter", sans-serif;
 $gray-border: rgba(255, 255, 255, 0.2);
 $inverted-border-color: #e6e6e6;
 $gray-hamburger: #1f1f1f;
+$dark-background: #171717;
+$subtitle-underline: #3c3c3c;
 $gray-text: #727272;
 $black: #000;
 $white: #fff;
@@ -22,11 +24,16 @@ html {
 body {
     padding: 0;
     margin: 0;
-}
-#root {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
+
+.page-wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: $dark-background;
+}
+
 body,
 * {
     box-sizing: border-box;

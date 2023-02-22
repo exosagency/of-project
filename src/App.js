@@ -1,10 +1,13 @@
-import logo from './logo.svg';
-import Homepage from './components/homepage';
-import './styles/main.scss';
+import Homepage from "./components/homepage";
+import ServicesPage from "./components/services";
+import "./styles/main.scss";
 function App() {
-  return (
-    <Homepage />
-  );
+    return (
+        <div className="page-wrapper">
+            <Homepage />
+            <ServicesPage />
+        </div>
+    );
 }
 
 export default App;
