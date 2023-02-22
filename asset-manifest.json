@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.css": "/of-project/static/css/main.9c25242f.css",
-    "main.js": "/of-project/static/js/main.423c986e.js",
+    "main.css": "/of-project/static/css/main.3a9051c0.css",
+    "main.js": "/of-project/static/js/main.86409741.js",
     "static/js/787.f1c8016d.chunk.js": "/of-project/static/js/787.f1c8016d.chunk.js",
+    "static/media/services.png": "/of-project/static/media/services.a991c4b5c52012a0eb61.png",
     "static/media/homepage-background.jpg": "/of-project/static/media/homepage-background.524ca0add954a93083ca.jpg",
-    "static/media/logo.svg": "/of-project/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/camera-svgrepo-com.svg": "/of-project/static/media/camera-svgrepo-com.b4ccc21b6f0afe59cc67f2876fee9d1b.svg",
     "index.html": "/of-project/index.html",
-    "main.9c25242f.css.map": "/of-project/static/css/main.9c25242f.css.map",
-    "main.423c986e.js.map": "/of-project/static/js/main.423c986e.js.map",
+    "static/media/marketing-svgrepo-com.svg": "/of-project/static/media/marketing-svgrepo-com.528f97b680bb47d4e4bd30bae9242341.svg",
+    "static/media/laptop-svgrepo-com.svg": "/of-project/static/media/laptop-svgrepo-com.9342cb57c7b1ab2ac00a3a08b390bc13.svg",
+    "static/media/analytics-svgrepo-com.svg": "/of-project/static/media/analytics-svgrepo-com.8c7b036d231b975a7d4193ee810be3e5.svg",
+    "static/media/phone-svgrepo-com.svg": "/of-project/static/media/phone-svgrepo-com.a493dafe9ddfd679f4716e50b575cec3.svg",
+    "static/media/send-1-svgrepo-com.svg": "/of-project/static/media/send-1-svgrepo-com.5a579c0b6fe84333af8d5cdcfe32f2b7.svg",
+    "main.3a9051c0.css.map": "/of-project/static/css/main.3a9051c0.css.map",
+    "main.86409741.js.map": "/of-project/static/js/main.86409741.js.map",
     "787.f1c8016d.chunk.js.map": "/of-project/static/js/787.f1c8016d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c25242f.css",
-    "static/js/main.423c986e.js"
+    "static/css/main.3a9051c0.css",
+    "static/js/main.86409741.js"
   ]
 }
