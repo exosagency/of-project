@@ -1,6 +1,7 @@
 import SocialMediaList from "../../SocialMediaList";
+import HamburgerButton from "../HamburgerButton";
 
-const Overlay = ({ isOpen }) => {
+const Overlay = ({ isOpen, setIsOverlayOpen }) => {
     return (
         <div className={`homepage-overlay ${!isOpen ? "close" : ""}`}>
             <div className="overlay-header"></div>

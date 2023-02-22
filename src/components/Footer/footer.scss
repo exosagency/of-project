@@ -7,8 +7,12 @@
     margin: 0 auto;
     max-width: 1240px;
     display: flex;
+    padding: 0 2rem 2rem;
     > div {
-        width: 25%;
+        width: 100%;
+        @media (min-width: map-get($grid-breakpoints, sm)) {
+            width: 25%;
+        }
     }
     h3 {
         font-size: 28px;
@@ -24,6 +28,10 @@
     display: flex;
     width: 20%;
     flex-direction: column;
+    align-items: center;
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+        align-items: unset;
+    }
     a {
         color: $white;
         font-size: 28px;
@@ -53,7 +61,14 @@
         transform-origin: bottom left;
     }
 }
-
+.footer-contact-wrapper,
+.footer-follow-wrapper,
+.footer-newsletter-wrapper {
+    display: none;
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+        display: block;
+    }
+}
 .footer-contact-wrapper {
     a {
         color: $gray-text;

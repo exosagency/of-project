@@ -2,17 +2,13 @@ import line from "../../assets/line.png";
 import arrow from "../../assets/arrow-2.png";
 import arrowBtn from "../../assets/arrow.png";
 import longLine from "../../assets/line-2.png";
-import HamburgerButton from "./HamburgerButton";
-import { useState } from "react";
 import Header from "./Header";
-import Overlay from "./Overlay";
-const Homepage = () => {
-    const [isSideBarOpen, setIsSideBarOpen] = useState(false);
+
+const Homepage = ({ isOverlayOpen }) => {
     return (
         <div className="homepage-wrapper page-wrapper">
             <Header />
-            <div className={`sidebar-wrapper ${isSideBarOpen ? "inverted" : ""}`}>
-                <HamburgerButton isOpen={isSideBarOpen} onClick={() => setIsSideBarOpen(!isSideBarOpen)} />
+            <div className={`sidebar-wrapper ${isOverlayOpen ? "inverted" : ""}`}>
                 <div className="sidebar-countries">
                     <p>USA</p>
                     <img alt="line" src={line} />
@@ -47,7 +43,6 @@ const Homepage = () => {
                     <p>04</p>
                 </div>
             </footer>
-            <Overlay isOpen={isSideBarOpen} />
         </div>
     );
 };
