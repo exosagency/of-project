@@ -1,18 +1,37 @@
 import SocialMediaList from "../../SocialMediaList";
 
 const Overlay = ({ isOpen, setIsOverlayOpen }) => {
-    const handleClick = () => {
+    const scrollToServices = (e) => {
+        e.preventDefault();
         setIsOverlayOpen(false);
-    }
+        const servicesPosition = document.querySelector("#services")?.offsetTop;
+        window.scrollTo({ top: servicesPosition, behavior: "smooth" });
+    };
+    const scrollToHome = (e) => {
+        e.preventDefault();
+        setIsOverlayOpen(false);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
     return (
         <div className={`homepage-overlay ${!isOpen ? "close" : ""}`}>
             <div className="overlay-header"></div>
             <nav>
-                <a href="/#homepage" onClick={handleClick}>Home</a>
-                <a href="/#services" onClick={handleClick}>Services</a>
-                <a href="/">Our Models</a>
-                <a href="/">News</a>
-                <a href="/">Contact</a>
+                <a href="/homepage" onClick={scrollToHome}>
+                    Home
+                </a>
+                <a href="/services" onClick={scrollToServices}>
+                    Services
+                </a>
+                <a href="/" onClick={scrollToHome}>
+                    Our Models
+                </a>
+                <a href="/" onClick={scrollToHome}>
+                    News
+                </a>
+                <a href="/" onClick={scrollToHome}>
+                    Contact
+                </a>
             </nav>
             <div className="overlay-footer">
                 <SocialMediaList isColorInverted />
