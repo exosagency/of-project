@@ -1,13 +1,15 @@
 import SocialMediaList from "../../SocialMediaList";
-import HamburgerButton from "../HamburgerButton";
 
 const Overlay = ({ isOpen, setIsOverlayOpen }) => {
+    const handleClick = () => {
+        setIsOverlayOpen(false);
+    }
     return (
         <div className={`homepage-overlay ${!isOpen ? "close" : ""}`}>
             <div className="overlay-header"></div>
             <nav>
-                <a href="/">Home</a>
-                <a href="/">Services</a>
+                <a href="/#homepage" onClick={handleClick}>Home</a>
+                <a href="/#services" onClick={handleClick}>Services</a>
                 <a href="/">Our Models</a>
                 <a href="/">News</a>
                 <a href="/">Contact</a>

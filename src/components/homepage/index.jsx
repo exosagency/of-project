@@ -5,8 +5,13 @@ import longLine from "../../assets/line-2.png";
 import Header from "./Header";
 
 const Homepage = ({ isOverlayOpen }) => {
+    const scrollToServices = () => {
+        const servicesPosition = document.querySelector("#services")?.offsetTop;
+        console.log("a", servicesPosition);
+        window.scrollTo({ top: servicesPosition, behavior: "smooth" });
+    };
     return (
-        <div className="homepage-wrapper page-wrapper">
+        <div className="homepage-wrapper page-wrapper" id="homepage">
             <Header />
             <div className={`sidebar-wrapper ${isOverlayOpen ? "inverted" : ""}`}>
                 <div className="sidebar-countries">
@@ -30,7 +35,7 @@ const Homepage = ({ isOverlayOpen }) => {
                     At EXOS Agency our partners are enabled to reach
                     <br /> the pinnacle of success withing the fan-base subscription market
                 </p>
-                <button className="learn-more-btn">
+                <button className="learn-more-btn" onClick={() => scrollToServices()}>
                     Learn more <img alt="arrow" src={arrowBtn} />
                 </button>
             </main>

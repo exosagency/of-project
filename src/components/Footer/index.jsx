@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="main-footer-content">
                 <div className="footer-nav">
                     {footerNav.map((item) => (
-                        <div>
+                        <div key={item}>
                             <a href="">{item}</a>
                         </div>
                     ))}

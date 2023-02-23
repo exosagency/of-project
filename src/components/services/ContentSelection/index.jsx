@@ -13,10 +13,10 @@ const navItems = [
 ];
 const ContentSelection = ({ setActivePage }) => {
     return (
-        <div className="services-nav-wrapper">
+        <div className="services-nav-wrapper" id="services">
             <nav className="services-nav">
                 {navItems.map((item) => (
-                    <button type="button" onClick={() => setActivePage(item.pageNum)}>
+                    <button key={item.label} type="button" onClick={() => setActivePage(item.pageNum)}>
                         <img src={item.icon} alt={item.label} />
                         <span>{item.label}</span>
                     </button>
