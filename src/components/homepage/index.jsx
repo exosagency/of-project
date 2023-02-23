@@ -21,9 +21,9 @@ const Homepage = ({ isOverlayOpen }) => {
                 </div>
                 <div className="sidebar-discover">
                     <p>discover</p>
-                    <a hreaf="/#">
+                    <button onClick={scrollToServices}>
                         <img alt="arrow" src={arrow} />
-                    </a>
+                    </button>
                 </div>
             </div>
             <main className="homepage-main">
