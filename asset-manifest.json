@@ -1,10 +1,16 @@
 {
   "files": {
-    "main.css": "/of-project/static/css/main.41347b3e.css",
-    "main.js": "/of-project/static/js/main.dc8e9e0d.js",
+    "main.css": "/of-project/static/css/main.a3ea50ca.css",
+    "main.js": "/of-project/static/js/main.018549ac.js",
     "static/js/787.f1c8016d.chunk.js": "/of-project/static/js/787.f1c8016d.chunk.js",
     "static/media/homepage-bg.jpg": "/of-project/static/media/homepage-bg.32abe99a6be0c339fdb0.jpg",
     "static/media/services.png": "/of-project/static/media/services.a991c4b5c52012a0eb61.png",
+    "static/media/testimonials.jpg": "/of-project/static/media/testimonials.a8cbf3bd28503f601f31.jpg",
+    "static/media/img-2.jpg": "/of-project/static/media/img-2.210e5325eebb5da39076.jpg",
+    "static/media/black-red.jpg": "/of-project/static/media/black-red.72f374877d482ca9ac12.jpg",
+    "static/media/about-us1.jpg": "/of-project/static/media/about-us1.30b1e2e58225571899de.jpg",
+    "static/media/green-leaf.jpg": "/of-project/static/media/green-leaf.676bd2cad0fb533aa323.jpg",
+    "static/media/beach.jpg": "/of-project/static/media/beach.3eb3bc3c59b5f13c60b6.jpg",
     "static/media/camera-svgrepo-com.svg": "/of-project/static/media/camera-svgrepo-com.b4ccc21b6f0afe59cc67f2876fee9d1b.svg",
     "index.html": "/of-project/index.html",
     "static/media/marketing-svgrepo-com.svg": "/of-project/static/media/marketing-svgrepo-com.528f97b680bb47d4e4bd30bae9242341.svg",
@@ -12,12 +18,12 @@
     "static/media/analytics-svgrepo-com.svg": "/of-project/static/media/analytics-svgrepo-com.8c7b036d231b975a7d4193ee810be3e5.svg",
     "static/media/phone-svgrepo-com.svg": "/of-project/static/media/phone-svgrepo-com.a493dafe9ddfd679f4716e50b575cec3.svg",
     "static/media/send-1-svgrepo-com.svg": "/of-project/static/media/send-1-svgrepo-com.5a579c0b6fe84333af8d5cdcfe32f2b7.svg",
-    "main.41347b3e.css.map": "/of-project/static/css/main.41347b3e.css.map",
-    "main.dc8e9e0d.js.map": "/of-project/static/js/main.dc8e9e0d.js.map",
+    "main.a3ea50ca.css.map": "/of-project/static/css/main.a3ea50ca.css.map",
+    "main.018549ac.js.map": "/of-project/static/js/main.018549ac.js.map",
     "787.f1c8016d.chunk.js.map": "/of-project/static/js/787.f1c8016d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.41347b3e.css",
-    "static/js/main.dc8e9e0d.js"
+    "static/css/main.a3ea50ca.css",
+    "static/js/main.018549ac.js"
   ]
 }
