@@ -1,4 +1,3 @@
-import Footer from "../Footer";
 import Header from "../Header";
 import ContentSelection from "./ContentSelection";
 import managementImage from "../../assets/services.png";
@@ -53,7 +52,6 @@ const ServicesPage = () => {
                     />
                 </div>
             </div>
-            <Footer />
         </>
     );
 };

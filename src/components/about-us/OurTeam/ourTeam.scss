@@ -1,0 +1,100 @@
+.our-team-wrapper {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+
+    h2 {
+        font-size: 5rem;
+        line-height: 6rem;
+        color: $white;
+        text-align: center;
+        margin: 8rem 0;
+    }
+
+    .team-grid {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        @media (min-width: map-get($grid-breakpoints, sm)) {
+            flex-direction: row;
+        }
+        > div {
+            width: 100%;
+            background-color: #222;
+            @media (min-width: map-get($grid-breakpoints, sm)) {
+                width: 50%;
+            }
+
+            @media (min-width: map-get($grid-breakpoints, lg)) {
+                width: 25%;
+            }
+        }
+    }
+    .team-member-border {
+        .team-member-picture {
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .team-member-info {
+            border-right: 1px solid $gray-text;
+        }
+    }
+    .team-member-info {
+        padding: 3rem 0;
+        p {
+            margin: 0;
+            text-align: center;
+        }
+    }
+    .team-member-name {
+        font-size: 2.8rem;
+        line-height: 3rem;
+        padding-bottom: 1.5rem;
+        font-weight: 600;
+        color: $white;
+    }
+    .team-member-title {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+        color: $gray-text;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    .team-member-picture {
+        background-color: $gray-text;
+        width: 100%;
+        height: 300px;
+    }
+
+    .dark {
+        background-color: $subtitle-underline;
+    }
+    .light {
+        background-color: $gray-light;
+    }
+
+    .team-member-links {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+        position: relative;
+        align-items: center;
+        a:not(:last-child) {
+            margin-right: 2rem;
+        }
+        img {
+            filter: contrast(10%);
+        }
+    }
+    .team-member-links::after {
+        content: "";
+        position: absolute;
+        top: -2rem;
+        left: 50%;
+        transform: translate(-50%);
+        width: 2rem;
+        height: 2px;
+        background-color: $gray-text;
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,110 @@
+.testimonials-section-wrapper {
+    width: 100%;
+    max-width: 1240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1px;
+    position: relative;
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        flex-direction: row;
+        align-items: unset;
+    }
+
+    .images{
+        max-width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+}
+.testimonials-section-wrapper::after {
+    width: 100%;
+    content: '';
+    height: 1px;
+    position: absolute;
+    background-color: $gray-text;
+    bottom: 0;
+    left: 0;
+}
+
+.testimonials-content {
+    width: 100%;
+    padding: 10rem 6rem;
+    background-color: #222;
+    max-height: 600px;
+    max-width: 583px;
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        max-width: unset;
+        width: calc(100% - 583px);
+    }
+}
+
+.testimonials-subtitle {
+    color: $gray-text;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+        font-size: 1.4rem;
+        line-height: 1.2rem;
+    }
+}
+.testimonials-title {
+    color: $white;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 2.2rem 0 3.5rem;
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+        font-size: 2.5rem;
+        line-height: 3.8rem;
+    }
+    @media (min-width: map-get($grid-breakpoints, xl)) {
+        font-size: 3rem;
+        line-height: 4.2rem;
+    }
+}
+.testimoials-author::after {
+    content: "";
+    width: 2rem;
+    height: 2px;
+    background-color: $gray-text;
+    position: absolute;
+    top: -6rem;
+    left: 0;
+}
+.testimoials-author {
+    margin-top: 10rem;
+    position: relative;
+    .author {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        color: $white;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 1rem 0;
+    }
+    .role {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+        margin: 0;
+        color: $gray-text;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+    .link {
+        display: inline-block;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        color: $gray-text;
+        font-weight: 600;
+        text-transform: lowercase;
+        text-decoration: none;
+        margin-top: 2rem;
+    }
+}

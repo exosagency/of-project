@@ -4,6 +4,8 @@ import "./styles/main.scss";
 import { useState } from "react";
 import HamburgerButton from "./components/homepage/HamburgerButton";
 import Overlay from "./components/homepage/Overlay";
+import AboutUsPage from "./components/about-us";
+import Footer from './components/Footer';
 function App() {
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
 
@@ -11,8 +13,10 @@ function App() {
         <div className="page-wrapper">
             <Homepage isOverlayOpen={isSideBarOpen} />
             <ServicesPage />
+            <AboutUsPage />
             <Overlay isOpen={isSideBarOpen} setIsOverlayOpen={setIsSideBarOpen} />
             <HamburgerButton isOpen={isSideBarOpen} onClick={() => setIsSideBarOpen(!isSideBarOpen)} />
+            <Footer />
         </div>
     );
 }
