@@ -1,23 +1,33 @@
 .homepage-header {
-    margin: 0 80px 0 50px;
+    margin: 0 80px 0 0;
     height: 80px;
+    position: fixed;
+    left: 0;
     top: 0;
+    width: calc(100% - 40px);
     display: flex;
-    padding-top: 10px;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
+    z-index: 5;
+    background-color: $dark-background;
 
     @media (min-width: map-get($grid-breakpoints, sm)) {
         flex-direction: row;
-        padding-top: 0;
+        align-items: center;
         justify-content: space-between;
+        width: calc(100% - 80px);
     }
 }
 .homepage-header > img {
-    // background-color: rgba(0, 0, 0, 0.3);
-    // padding: 0.5rem 1rem;
     z-index: 2;
+    margin-left: 80px;
+    margin-top: 25px;
+    display: none;
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+        margin-top: 0;
+        display: inline-block;
+    }
 }
 .homepage-header::after {
     content: "";
@@ -35,11 +45,11 @@
     width: 290px;
     margin-right: 3rem;
 
-    &.inverted{
-        img{
-            filter:invert(100%);
+    &.inverted {
+        img {
+            filter: invert(100%);
         }
-        p{
+        p {
             color: $black;
         }
     }
@@ -61,4 +71,43 @@
 .social-media-options a {
     display: block;
     padding: 0.4rem;
+}
+
+.apply-now-btn {
+    padding: 3.1rem 1.5rem 3.1rem;
+    background-color: $white;
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 700;
+    width: 230px;
+    color: $black;
+    border: 0;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+    cursor: pointer;
+    img {
+        margin-left: 2rem;
+    }
+}
+
+.apply-now-btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #8e8e8e;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.apply-now-btn:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }

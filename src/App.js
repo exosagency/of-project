@@ -5,7 +5,8 @@ import { useState } from "react";
 import HamburgerButton from "./components/homepage/HamburgerButton";
 import Overlay from "./components/homepage/Overlay";
 import AboutUsPage from "./components/about-us";
-import Footer from './components/Footer';
+import Footer from "./components/Footer";
+import FixedHeader from "components/homepage/Header";
 function App() {
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
 
@@ -17,6 +18,7 @@ function App() {
             <Overlay isOpen={isSideBarOpen} setIsOverlayOpen={setIsSideBarOpen} />
             <HamburgerButton isOpen={isSideBarOpen} onClick={() => setIsSideBarOpen(!isSideBarOpen)} />
             <Footer />
+            <FixedHeader />
         </div>
     );
 }

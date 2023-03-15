@@ -2,7 +2,6 @@ import line from "../../assets/line.png";
 import arrow from "../../assets/arrow-2.png";
 import arrowBtn from "../../assets/arrow.png";
 import longLine from "../../assets/line-2.png";
-import Header from "./Header";
 
 const Homepage = ({ isOverlayOpen }) => {
     const scrollToServices = () => {
@@ -12,7 +11,6 @@ const Homepage = ({ isOverlayOpen }) => {
     };
     return (
         <div className="homepage-wrapper page-wrapper" id="homepage">
-            <Header />
             <div className={`sidebar-wrapper ${isOverlayOpen ? "inverted" : ""}`}>
                 <div className="sidebar-countries">
                     <p>USA</p>
