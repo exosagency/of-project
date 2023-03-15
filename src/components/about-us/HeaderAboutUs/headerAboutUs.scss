@@ -1,3 +1,9 @@
 .about-us-header::after {
     content: none !important;
 }
+.about-us-header {
+    padding-top: 0 !important;
+    h1{
+        margin-top: 2rem;
+    }
+}
