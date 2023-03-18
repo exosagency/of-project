@@ -7,7 +7,7 @@
     width: calc(100% - 40px);
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-end;
     flex-direction: column;
     z-index: 5;
     background-color: $dark-background;
@@ -74,7 +74,7 @@
 }
 
 .apply-now-btn {
-    padding: 3.1rem 1.5rem 3.1rem;
+    padding: 1.4rem 1rem;
     background-color: $white;
     display: flex;
     font-size: 1.3rem;
@@ -87,8 +87,8 @@
     letter-spacing: 0.3rem;
     justify-content: center;
     align-items: center;
-    margin-right: 3rem;
     cursor: pointer;
+    margin-right: 3rem;
     img {
         margin-left: 2rem;
     }

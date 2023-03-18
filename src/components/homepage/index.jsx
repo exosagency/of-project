@@ -38,13 +38,13 @@ const Homepage = ({ isOverlayOpen }) => {
                 </button>
             </main>
             <footer className="homepage-footer">
-                <div>
+                {/* <div>
                     <p>01</p>
                     <img src={longLine} alt="line" />
                     <p>02</p>
                     <p>03</p>
                     <p>04</p>
-                </div>
+                </div> */}
             </footer>
         </div>
     );
