@@ -32,6 +32,13 @@ const Overlay = ({ isOpen, setIsOverlayOpen }) => {
                 <a href="/" onClick={scrollToHome}>
                     Contact
                 </a>
+                <button
+                    onClick={() => {
+                        throw new Error("Testing error page!");
+                    }}
+                >
+                    ERROR
+                </button>
             </nav>
             <div className="overlay-footer">
                 <SocialMediaList isColorInverted />

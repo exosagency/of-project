@@ -7,19 +7,27 @@ import Overlay from "./components/homepage/Overlay";
 import AboutUsPage from "./components/about-us";
 import Footer from "./components/Footer";
 import FixedHeader from "components/homepage/Header";
+import ContactUs from "components/contact-us";
+import ErrorBoundary from "components/error-boundary";
+
 function App() {
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
-
+    const [hasError, setHasError] = useState(false);
+    console.log(hasError);
     return (
-        <div className="page-wrapper">
-            <Homepage isOverlayOpen={isSideBarOpen} />
-            <ServicesPage />
-            <AboutUsPage />
-            <Overlay isOpen={isSideBarOpen} setIsOverlayOpen={setIsSideBarOpen} />
-            <HamburgerButton isOpen={isSideBarOpen} onClick={() => setIsSideBarOpen(!isSideBarOpen)} />
-            <Footer />
-            <FixedHeader />
-        </div>
+        <ErrorBoundary hasError={hasError}>
+            <div className="page-wrapper">
+                <Homepage isOverlayOpen={isSideBarOpen} />
+                <ServicesPage />
+                <AboutUsPage />
+                <Overlay isOpen={isSideBarOpen} setIsOverlayOpen={setIsSideBarOpen} />
+                <HamburgerButton isOpen={isSideBarOpen} onClick={() => setIsSideBarOpen(!isSideBarOpen)} />
+                <ContactUs />
+                <Footer />
+                <FixedHeader />
+                <button onClick={() => setHasError(true)}>ERROR</button>
+            </div>
+        </ErrorBoundary>
     );
 }
 

@@ -6,7 +6,6 @@ import longLine from "../../assets/line-2.png";
 const Homepage = ({ isOverlayOpen }) => {
     const scrollToServices = () => {
         const servicesPosition = document.querySelector("#services")?.offsetTop;
-        console.log("a", servicesPosition);
         window.scrollTo({ top: servicesPosition, behavior: "smooth" });
     };
     return (
