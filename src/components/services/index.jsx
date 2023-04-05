@@ -8,7 +8,7 @@ import Slide from "./Slide";
 const ServicesPage = () => {
     const [selectedSlide, setSelectedSlide] = useState(0);
     const currentOffset = selectedSlide * -100;
-    console.log(currentOffset);
+
     return (
         <>
             <Header />

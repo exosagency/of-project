@@ -10,8 +10,8 @@
     align-items: flex-end;
     flex-direction: column;
     z-index: 5;
-    background-color: $dark-background;
-
+    background-color: transparent;
+    transition: 0.3s all;
     @media (min-width: map-get($grid-breakpoints, sm)) {
         flex-direction: row;
         align-items: center;
@@ -19,6 +19,15 @@
         width: calc(100% - 80px);
     }
 }
+.scrolled-header {
+    background-color: $dark-background !important;
+    height: 60px !important;
+}
+
+.scrolled-header::after {
+    top: 60px !important;
+}
+
 .homepage-header > img {
     z-index: 2;
     margin-left: 80px;

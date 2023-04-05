@@ -9,10 +9,14 @@
     height: 80px;
     background-color: $white;
     z-index: 5;
+    transition: 0.3s all;
     @media (min-width: map-get($grid-breakpoints, sm)) {
         width: 80px;
         height: 80px;
     }
+}
+.hamburger-btn-scroll {
+    height: 60px !important;
 }
 .hamburger-button {
     display: inline-block;

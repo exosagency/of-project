@@ -10,24 +10,23 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: 20px;
     width: 100%;
     height: 100vh;
     z-index: 0;
 }
 
 .sidebar-wrapper {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     width: 42px;
     left: calc(100vw - 42px);
     z-index: 1;
     position: absolute;
     top: 0;
-    padding: 145px 0 80px;
+    padding: 160px 0 80px;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     border-left: 2px solid $gray-border;
     a {
         cursor: pointer;
@@ -52,11 +51,13 @@ body {
     @media (min-width: map-get($grid-breakpoints, sm)) {
         left: calc(100vw - 82px);
         width: 82px;
+        padding: 145px 0 80px;
+        justify-content: space-around;
     }
 }
 .sidebar-wrapper p {
     color: $white;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.3rem;
     writing-mode: vertical-rl;
     letter-spacing: 0.2rem;
@@ -64,6 +65,7 @@ body {
 }
 
 .sidebar-countries {
+    margin-bottom: 25px;
     img {
         position: relative;
         left: 18px;
@@ -72,6 +74,7 @@ body {
 
     @media (min-width: map-get($grid-breakpoints, sm)) {
         padding: 0 20px;
+        margin-bottom: 0px;
     }
 }
 
@@ -81,11 +84,22 @@ body {
         background-color: transparent;
         display: inline-block;
         border: 0;
+        display: flex;
+        justify-content: center;
+        width: 40px;
+        @media (min-width: map-get($grid-breakpoints, sm)) {
+            display: inline-block;
+            padding: 0 20px;
+            width: unset;
+        }
     }
     img {
-        position: relative;
-        left: 8px;
+        position: static;
+        left: -6px;
         margin-top: 3rem;
+        @media (min-width: map-get($grid-breakpoints, sm)) {
+            position: relative;
+        }
     }
     p {
         letter-spacing: 0.4rem;
@@ -136,7 +150,7 @@ body {
     line-height: 2.4rem;
     max-width: 80%;
     font-weight: 500;
-    color: $gray-text;
+    color: $white;
     margin: 0.7rem 0 2.9rem;
     padding-left: 0;
     @media (min-width: map-get($grid-breakpoints, sm)) {
@@ -188,6 +202,7 @@ body {
     height: 84px;
     width: 100vw;
     border-bottom: 2px solid $gray-border;
+    border-top: 2px solid $gray-border;
     padding: 0 20px;
     background-color: rgba(0, 0, 0, 0.3);
     @media (min-width: map-get($grid-breakpoints, sm)) {

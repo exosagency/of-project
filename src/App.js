@@ -12,10 +12,10 @@ import ErrorBoundary from "components/error-boundary";
 
 function App() {
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
-    const [hasError, setHasError] = useState(false);
-    console.log(hasError);
+    // const [hasError, setHasError] = useState(false);
+
     return (
-        <ErrorBoundary hasError={hasError}>
+        <ErrorBoundary>
             <div className="page-wrapper">
                 <Homepage isOverlayOpen={isSideBarOpen} />
                 <ServicesPage />
@@ -25,7 +25,7 @@ function App() {
                 <ContactUs />
                 <Footer />
                 <FixedHeader />
-                <button onClick={() => setHasError(true)}>ERROR</button>
+                {/* <button onClick={() => setHasError(true)}>ERROR</button> */}
             </div>
         </ErrorBoundary>
     );
