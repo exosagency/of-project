@@ -30,11 +30,13 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: overlay;
+    scrollbar-width: thin;
 }
 body::-webkit-scrollbar {
     width: 6px;
     position: absolute;
     border-radius: 4px;
+    scrollbar-width: thin;
 }
 
 body::-webkit-scrollbar-track {
