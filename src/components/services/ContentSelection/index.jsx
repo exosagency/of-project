@@ -11,12 +11,17 @@ const navItems = [
     { label: "marketing", icon: MarketingIcon, pageNum: 3 },
     { label: "analytics", icon: AnalyticsIcon, pageNum: 4 },
 ];
-const ContentSelection = ({ setActivePage }) => {
+const ContentSelection = ({ setActivePage, activePage }) => {
     return (
         <div className="services-nav-wrapper" id="services">
             <nav className="services-nav">
                 {navItems.map((item) => (
-                    <button key={item.label} type="button" onClick={() => setActivePage(item.pageNum)}>
+                    <button
+                        className={activePage === item.pageNum ? "active-page" : ""}
+                        key={item.label}
+                        type="button"
+                        onClick={() => setActivePage(item.pageNum)}
+                    >
                         <img src={item.icon} alt={item.label} />
                         <span>{item.label}</span>
                     </button>

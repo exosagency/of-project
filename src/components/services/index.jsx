@@ -11,8 +11,8 @@ const ServicesPage = () => {
 
     return (
         <>
-            <Header />
-            <ContentSelection setActivePage={setSelectedSlide} />
+            {/* <Header /> */}
+            <ContentSelection activePage={selectedSlide} setActivePage={setSelectedSlide} />
             <div className="slider">
                 <div className="slider-content" style={{ left: currentOffset + "vw" }}>
                     <Slide

@@ -12,13 +12,14 @@
         align-items: center;
         width: 20%;
         padding: 2.5rem;
-        color: $white;
+        color: rgb(198, 198, 198);
         background-color: $dark-background;
         font-size: 1.3rem;
         text-transform: uppercase;
         border: 0;
+        font-weight: 600;
         cursor: pointer;
-        span{
+        span {
             display: none;
             @media (min-width: map-get($grid-breakpoints, sm)) {
                 display: inline-block;
@@ -26,12 +27,22 @@
         }
     }
     button:hover {
-        background-color: $subtitle-underline;
+        img {
+            filter: invert(85%);
+        }
     }
     img {
-        max-width: 45px;
+        max-width: 40px;
         color: $white;
         filter: invert(0.5);
-        padding-bottom: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .active-page {
+        color: $white !important;
+        font-weight: 800;
+        img {
+            filter: invert(85%);
+        }
     }
 }
