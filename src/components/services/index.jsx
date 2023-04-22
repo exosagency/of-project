@@ -1,7 +1,5 @@
-import Header from "../Header";
 import ContentSelection from "./ContentSelection";
 import managementImage from "../../assets/services.png";
-import arrowBtn from "../../assets/arrow.png";
 import { useState } from "react";
 import Slide from "./Slide";
 
@@ -11,7 +9,6 @@ const ServicesPage = () => {
 
     return (
         <>
-            {/* <Header /> */}
             <ContentSelection activePage={selectedSlide} setActivePage={setSelectedSlide} />
             <div className="slider">
                 <div className="slider-content" style={{ left: currentOffset + "vw" }}>

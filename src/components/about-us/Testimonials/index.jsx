@@ -1,7 +1,7 @@
 import Img from "assets/about-us/testimonials.jpg";
 
-const Testimonials = () => (
-    <div className="testimonials-section-wrapper">
+const Testimonials = ({ inverted }) => (
+    <div className={`testimonials-section-wrapper ${inverted ? "testimonials-section-wrapper-inverted" : ""}`}>
         <div className="images">
             <img src={Img} alt="" />
         </div>

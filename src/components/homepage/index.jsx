@@ -6,7 +6,7 @@ import longLine from "../../assets/line-2.png";
 const Homepage = ({ isOverlayOpen }) => {
     const scrollToServices = () => {
         const servicesPosition = document.querySelector("#services")?.offsetTop;
-        window.scrollTo({ top: servicesPosition, behavior: "smooth" });
+        window.scrollTo({ top: servicesPosition - 60, behavior: "smooth" });
     };
     return (
         <div className="homepage-wrapper page-wrapper" id="homepage">
