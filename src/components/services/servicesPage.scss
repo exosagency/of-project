@@ -1,5 +1,5 @@
 .services-content-wrapper {
-    max-width: 1240px;
+    // max-width: 1240px;
     margin: 0 auto;
     display: flex;
     margin-bottom: 5rem;
@@ -12,7 +12,6 @@
         flex-direction: row;
         align-items: unset;
     }
-
 }
 
 .services-content {
@@ -110,4 +109,11 @@
     width: 100vw;
     position: relative;
     left: 0;
+}
+
+.content-image {
+    min-width: 40%;
+    img {
+        width: 100%;
+    }
 }

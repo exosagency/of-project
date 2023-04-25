@@ -28,22 +28,23 @@
     }
     button:hover {
         img {
-            filter: invert(0.85);
+            filter: invert(0.9);
             will-change: transform;
         }
     }
     img {
-        max-width: 40px;
+        max-width: 30px;
         color: $white;
         filter: invert(50%);
-        padding-bottom: 1.5rem;
+        padding-bottom: 2rem;
+        will-change: transform;
     }
 
     .active-page {
         color: $white !important;
         font-weight: 800;
         img {
-            filter: invert(0.85);
+            filter: invert(0.9);
             will-change: transform;
         }
     }
