@@ -27,10 +27,11 @@
         }
     }
     button:hover {
-        img {
-            filter: invert(0.9);
-            will-change: transform;
-        }
+        background-color: $subtitle-underline;
+        // img {
+        // filter: invert(0.9);
+        // will-change: transform;
+        // }
     }
     img {
         max-width: 30px;
@@ -41,11 +42,12 @@
     }
 
     .active-page {
-        color: $white !important;
+        // color: $white !important;
         font-weight: 800;
-        img {
-            filter: invert(0.9);
-            will-change: transform;
-        }
+        background-color: $subtitle-underline;
+        // img {
+        //     filter: invert(0.9);
+        //     will-change: transform;
+        // }
     }
 }

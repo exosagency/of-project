@@ -117,3 +117,16 @@
         width: 100%;
     }
 }
+.services-content-wrapper {
+    position: relative;
+}
+.services-content-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 0.2rem;
+    background-color: $subtitle-underline;
+    bottom: -2px;
+    left: 50%;
+    transform: translate(-50%);
+}
