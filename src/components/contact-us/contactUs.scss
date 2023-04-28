@@ -1,5 +1,5 @@
 .contact-us-content-wrapper {
-    max-width: 1240px;
+    // max-width: 1240px;
     background-color: #222222;
     margin: 0 auto;
     display: flex;
@@ -16,7 +16,7 @@
 }
 
 .contact-us-image {
-    img{
+    img {
         width: 100%;
     }
     @media (min-width: map-get($grid-breakpoints, lg)) {
@@ -107,4 +107,24 @@
     //     transform: scaleX(1);
     //     transform-origin: bottom left;
     // }
+}
+
+.logo-div {
+    width: 100%;
+    display: none;
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+}
+
+.contact-form-logo-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        flex-direction: row;
+    }
 }

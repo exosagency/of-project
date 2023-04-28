@@ -1,4 +1,6 @@
 import img from "assets/contact-us.jpg";
+import ContactForm from "./contact-form";
+import logo from "assets/logo.png";
 
 const ContactUs = () => {
     return (
@@ -22,8 +24,14 @@ const ContactUs = () => {
                             <br />
                             +1 805 402 5580
                             <br />
-                            Phoneix, AZ
+                            Phenix, AZ
                         </h2>
+                    </div>
+                </div>
+                <div className="contact-form-logo-wrapper">
+                    <ContactForm />
+                    <div className="logo-div">
+                        <img src={logo} alt="logo" />
                     </div>
                 </div>
             </div>
