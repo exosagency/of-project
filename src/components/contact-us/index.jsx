@@ -24,7 +24,7 @@ const ContactUs = () => {
                             <br />
                             +1 805 402 5580
                             <br />
-                            Phenix, AZ
+                            Phoenix, AZ
                         </h2>
                     </div>
                 </div>
