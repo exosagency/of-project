@@ -6,10 +6,10 @@ const ContactUs = () => {
     return (
         <>
             <div className="main-header">
-                <h1>Contact us</h1>
-                <p className="subtitle">
+                <h1 className="contact-title">Contact us</h1>
+                <p className="contact-subtile subtitle">
                     The hardest task you'll face is managing everything it takes to become successful. Are you ready to
-                    achieve the unimaginable?
+                    achieve the <b>unimaginable</b>?
                 </p>
             </div>
             <div className={`contact-us-section `}>
