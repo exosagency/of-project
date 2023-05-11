@@ -53,8 +53,8 @@ const ContactForm = () => {
     };
     // console.log(errorMessage);
     return (
-        <div className="form-wrapper">
-            <h2 className="form-subtitle">contact us</h2>
+        <div className="form-wrapper" id="apply-now">
+            <h2 className="form-subtitle">Apply now</h2>
             <h2 className="form-title">If you want to join</h2>
             <form onSubmit={handleSubmit}>
                 <div className="column-inputs">

@@ -5,8 +5,23 @@ const Overlay = ({ isOpen, setIsOverlayOpen }) => {
         e.preventDefault();
         setIsOverlayOpen(false);
         const servicesPosition = document.querySelector("#services")?.offsetTop;
-        window.scrollTo({ top: servicesPosition, behavior: "smooth" });
+        window.scrollTo({ top: servicesPosition - 60, behavior: "smooth" });
     };
+
+    const scrollToContactUs = (e) => {
+        e.preventDefault();
+        setIsOverlayOpen(false);
+        const servicesPosition = document.querySelector("#contact-us")?.offsetTop;
+        window.scrollTo({ top: servicesPosition - 60, behavior: "smooth" });
+    };
+
+    const scrollToApplyNow = (e) => {
+        e.preventDefault();
+        setIsOverlayOpen(false);
+        const servicesPosition = document.querySelector("#apply-now")?.offsetTop;
+        window.scrollTo({ top: servicesPosition - 60, behavior: "smooth" });
+    };
+
     const scrollToHome = (e) => {
         e.preventDefault();
         setIsOverlayOpen(false);
@@ -23,22 +38,25 @@ const Overlay = ({ isOpen, setIsOverlayOpen }) => {
                 <a href="/services" onClick={scrollToServices}>
                     Services
                 </a>
-                <a href="/" onClick={scrollToHome}>
+                {/* <a href="/" onClick={scrollToHome}>
                     Our Models
-                </a>
+                </a> */}
                 <a href="/" onClick={scrollToHome}>
                     News
                 </a>
-                <a href="/" onClick={scrollToHome}>
+                <a href="/" onClick={scrollToContactUs}>
                     Contact
                 </a>
-                <button
+                <a href="/" onClick={scrollToApplyNow}>
+                    Apply Now
+                </a>
+                {/* <button
                     onClick={() => {
                         throw new Error("Testing error page!");
                     }}
                 >
                     ERROR
-                </button>
+                </button> */}
             </nav>
             <div className="overlay-footer">
                 <SocialMediaList isColorInverted />

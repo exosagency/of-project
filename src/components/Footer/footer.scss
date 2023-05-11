@@ -35,7 +35,7 @@
     @media (min-width: map-get($grid-breakpoints, sm)) {
         align-items: unset;
     }
-    a {
+    button {
         color: $white;
         font-size: 28px;
         line-height: 48px;
@@ -44,6 +44,9 @@
         position: relative;
         display: inline-block;
         font-weight: 600;
+        border: 0;
+        cursor: pointer;
+        background: none;
     }
 
     a::after {

@@ -10,6 +10,11 @@ const FixedHeader = () => {
         setScrollPosition(position);
     };
 
+    const scrollToApplyNow = () => {
+        const servicesPosition = document.querySelector("#apply-now")?.offsetTop;
+        window.scrollTo({ top: servicesPosition - 100, behavior: "smooth" });
+    };
+
     useEffect(() => {
         window.addEventListener("scroll", handleScroll, { passive: true });
 
@@ -22,7 +27,7 @@ const FixedHeader = () => {
         <header className={`homepage-header ${scrollPosition > 60 ? "scrolled-header" : ""}`}>
             <img alt="logo" src={logo}></img>
             {/* <SocialMediaList /> */}
-            <button className="apply-now-btn" type="button">
+            <button className="apply-now-btn" type="button" onClick={scrollToApplyNow}>
                 Apply now
             </button>
         </header>

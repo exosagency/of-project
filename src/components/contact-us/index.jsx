@@ -1,11 +1,11 @@
 import img from "assets/contact-us.jpg";
 import ContactForm from "./contact-form";
-import logo from "assets/logo.png";
+import logo from "assets/ExosAgencyBox.png";
 
 const ContactUs = () => {
     return (
         <>
-            <div className="main-header">
+            <div className="main-header" id="contact-us">
                 <h1 className="contact-title">Contact us</h1>
                 <p className="contact-subtile subtitle">
                     The hardest task you'll face is managing everything it takes to become successful. Are you ready to

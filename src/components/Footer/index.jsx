@@ -4,17 +4,24 @@ import twitter from "../../assets/twitter.png";
 import facebook from "../../assets/facebook.png";
 import send from "../../assets/send-1-svgrepo-com.svg";
 
-
-const footerNav = ["home", "services", "our models", "news", "contact"];
+const footerNav = ["home", "services", "contact-us", "apply-now"];
 
 const Footer = () => {
+    const scrollTo = (e, item) => {
+        e.preventDefault();
+        const topPosition = document.querySelector(`#${item}`)?.offsetTop;
+        console.log(item, topPosition);
+        window.scrollTo({ top: topPosition - 60, behavior: "smooth" });
+    };
     return (
         <footer className="main-footer">
             <div className="main-footer-content">
                 <div className="footer-nav">
                     {footerNav.map((item) => (
                         <div key={item}>
-                            <a href="">{item}</a>
+                            <button onClick={(e) => scrollTo(e, item)} type="button">
+                                {item.split("-").join(" ")}
+                            </button>
                         </div>
                     ))}
                 </div>
@@ -50,8 +57,10 @@ const Footer = () => {
                     <h3>Join our Newsletter</h3>
                     <p>Stay up to date on what we're up to</p>
                     <div className="newsletter-wrapper">
-                        <input type="text" name="" id="" placeholder="Email address"/>
-                        <button><img src={send} alt="send" /></button>
+                        <input type="text" name="" id="" placeholder="Email address" />
+                        <button>
+                            <img src={send} alt="send" />
+                        </button>
                     </div>
                 </div>
             </div>
