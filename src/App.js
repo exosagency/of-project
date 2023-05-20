@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import FixedHeader from "components/homepage/Header";
 import ContactUs from "components/contact-us";
 import ErrorBoundary from "components/error-boundary";
+import News from "components/news";
 
 function App() {
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
@@ -22,6 +23,7 @@ function App() {
                 <AboutUsPage />
                 <Overlay isOpen={isSideBarOpen} setIsOverlayOpen={setIsSideBarOpen} />
                 <HamburgerButton isOpen={isSideBarOpen} onClick={() => setIsSideBarOpen(!isSideBarOpen)} />
+                <News />
                 <ContactUs />
                 <Footer />
                 <FixedHeader />
