@@ -10,6 +10,7 @@ import FixedHeader from "components/homepage/Header";
 import ContactUs from "components/contact-us";
 import ErrorBoundary from "components/error-boundary";
 import News from "components/news";
+import Article from "components/article";
 
 function App() {
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
@@ -25,6 +26,7 @@ function App() {
                 <HamburgerButton isOpen={isSideBarOpen} onClick={() => setIsSideBarOpen(!isSideBarOpen)} />
                 <News />
                 <ContactUs />
+                <Article />
                 <Footer />
                 <FixedHeader />
                 {/* <button onClick={() => setHasError(true)}>ERROR</button> */}

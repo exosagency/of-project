@@ -1,0 +1,96 @@
+.article-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #727272;
+    border-bottom: 1px solid #727272;
+}
+.article-wrapper {
+    max-width: 1240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0rem;
+    img {
+        display: block;
+        width: 100%;
+    }
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+        padding: 1rem 0rem;
+    }
+    @media (min-width: map-get($grid-breakpoints, md)) {
+        padding: 1rem 7rem;
+    }
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        padding: 5rem 20rem;
+    }
+}
+.article-title {
+    color: $white;
+    font-size: 34px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: capitalize;
+    max-width: 80%;
+    @media (min-width: map-get($grid-breakpoints, md)) {
+        max-width: 100%;
+    }
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        max-width: 80%;
+    }
+}
+.article-text {
+    color: #727272;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+
+.article-subtitle {
+    margin: 0;
+    color: #727272;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+}
+.article-content {
+    padding: 1rem 4rem;
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+        padding: 2rem 6rem;
+    }
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        padding: 3rem 12rem;
+    }
+}
+.whats-new-text {
+    color: #b8b8b8;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+}
+
+.next-article-wrapper {
+    background: rgb(18, 18, 18);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem;
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+        padding: 4rem 6rem;
+    }
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        padding: 6rem 12rem;
+    }
+    .subtitle {
+        font-size: 1.4rem;
+        color: $white;
+        line-height: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin: 0;
+    }
+    .title {
+        color: $white;
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0;
+    }
+}
