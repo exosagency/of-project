@@ -31,6 +31,7 @@
     line-height: 48px;
     text-align: center;
     text-transform: capitalize;
+    margin-top: 0.5rem;
     max-width: 80%;
     @media (min-width: map-get($grid-breakpoints, md)) {
         max-width: 100%;
@@ -46,11 +47,19 @@
 }
 
 .article-subtitle {
-    margin: 0;
     color: #727272;
+    text-align: center;
+    width: 100%;
     font-size: 14px;
     line-height: 14px;
     font-weight: 500;
+    width: 80%;
+    @media (min-width: map-get($grid-breakpoints, md)) {
+        width: 100%;
+    }
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        width: 80%;
+    }
 }
 .article-content {
     padding: 1rem 4rem;
