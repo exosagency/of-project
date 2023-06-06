@@ -2,15 +2,19 @@ import line from "../../assets/line.png";
 import arrow from "../../assets/arrow-2.png";
 import arrowBtn from "../../assets/arrow.png";
 import longLine from "../../assets/line-2.png";
+import { useContext } from "react";
+import { MyContext } from "MyContext";
 
-const Homepage = ({ isOverlayOpen }) => {
+const Homepage = () => {
+    const { isSideBarOpen } = useContext(MyContext);
+
     const scrollToServices = () => {
         const servicesPosition = document.querySelector("#services")?.offsetTop;
         window.scrollTo({ top: servicesPosition - 60, behavior: "smooth" });
     };
     return (
         <div className="homepage-wrapper page-wrapper" id="homepage">
-            <div className={`sidebar-wrapper ${isOverlayOpen ? "inverted" : ""}`}>
+            <div className={`sidebar-wrapper ${isSideBarOpen ? "inverted" : ""}`}>
                 <div className="sidebar-countries">
                     <p>USA</p>
                     <img alt="line" src={line} />

@@ -1,62 +1,26 @@
+import { Link } from "react-router-dom";
 import SocialMediaList from "../../SocialMediaList";
 
 const Overlay = ({ isOpen, setIsOverlayOpen }) => {
-    const scrollToServices = (e) => {
-        e.preventDefault();
-        setIsOverlayOpen(false);
-        const servicesPosition = document.querySelector("#services")?.offsetTop;
-        window.scrollTo({ top: servicesPosition - 60, behavior: "smooth" });
-    };
-
-    const scrollToContactUs = (e) => {
-        e.preventDefault();
-        setIsOverlayOpen(false);
-        const servicesPosition = document.querySelector("#contact-us")?.offsetTop;
-        window.scrollTo({ top: servicesPosition - 60, behavior: "smooth" });
-    };
-
-    const scrollToApplyNow = (e) => {
-        e.preventDefault();
-        setIsOverlayOpen(false);
-        const servicesPosition = document.querySelector("#apply-now")?.offsetTop;
-        window.scrollTo({ top: servicesPosition - 60, behavior: "smooth" });
-    };
-
-    const scrollToHome = (e) => {
-        e.preventDefault();
-        setIsOverlayOpen(false);
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-
     return (
         <div className={`homepage-overlay ${!isOpen ? "close" : ""}`}>
             <div className="overlay-header"></div>
             <nav>
-                <a href="/homepage" onClick={scrollToHome}>
+                <Link to="/#homepage" onClick={() => setIsOverlayOpen(false)}>
                     Home
-                </a>
-                <a href="/services" onClick={scrollToServices}>
+                </Link>
+                <Link to="/#services" onClick={() => setIsOverlayOpen(false)}>
                     Services
-                </a>
-                {/* <a href="/" onClick={scrollToHome}>
-                    Our Models
-                </a> */}
-                <a href="/" onClick={scrollToHome}>
+                </Link>
+                <Link to="/#news" onClick={() => setIsOverlayOpen(false)}>
                     News
-                </a>
-                <a href="/" onClick={scrollToContactUs}>
+                </Link>
+                <Link to="/#contact-us" onClick={() => setIsOverlayOpen(false)}>
                     Contact
-                </a>
-                <a href="/" onClick={scrollToApplyNow}>
+                </Link>
+                <Link to="/#applyNow" onClick={() => setIsOverlayOpen(false)}>
                     Apply Now
-                </a>
-                {/* <button
-                    onClick={() => {
-                        throw new Error("Testing error page!");
-                    }}
-                >
-                    ERROR
-                </button> */}
+                </Link>
             </nav>
             <div className="overlay-footer">
                 <SocialMediaList isColorInverted />

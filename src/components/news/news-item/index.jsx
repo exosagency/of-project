@@ -1,4 +1,5 @@
 import arrowBtn from "assets/arrow.png";
+import { Link } from "react-router-dom";
 
 const NewsItem = ({ newsContent }) => {
     const { subtitle, title, image } = newsContent;
@@ -12,9 +13,9 @@ const NewsItem = ({ newsContent }) => {
                 <div className="news-content-wrapper">
                     <p className="news-item-subtitle">{subtitle}</p>
                     <h2 className="news-item-title">{title}</h2>
-                    <button className="read-more-btn">
+                    <Link className="read-more-btn" to={'/article/1'}>
                         Read more <img src={arrowBtn} alt="arrow" />
-                    </button>
+                    </Link>
                 </div>
             )}
         </div>

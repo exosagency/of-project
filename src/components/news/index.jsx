@@ -37,7 +37,7 @@ const News = () => {
             </div>
             <div className="news-wrapper">
                 {news.map((item) => (
-                    <NewsItem newsContent={item} />
+                    <NewsItem key={item.title} newsContent={item} />
                 ))}
             </div>
         </>
