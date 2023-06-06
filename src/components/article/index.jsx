@@ -1,7 +1,12 @@
 import ArticleMain from "assets/article-big.jpg";
 import ArticleSide from "assets/article-content.png";
+import { useEffect } from "react";
 
 const Article = () => {
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, []);
+
     return (
         <div className="article-page">
             <div className="article-wrapper">
