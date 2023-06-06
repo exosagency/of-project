@@ -1,11 +1,11 @@
 import "./styles/main.scss";
 import ErrorBoundary from "components/error-boundary";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import MainPage from "pages/mainPage";
 import ErrorPage from "pages/error-page";
 import ArticlePage from "pages/articlePage";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: "/",
         element: <MainPage />,
