@@ -1,14 +1,14 @@
 .services-content-wrapper {
     // max-width: 1240px;
+    position: relative;
     margin: 0 auto;
     display: flex;
-    margin-bottom: 5rem;
     flex-direction: column-reverse;
     @media (min-width: map-get($grid-breakpoints, sm)) {
         align-items: center;
     }
 
-    @media (min-width: map-get($grid-breakpoints, lg)) {
+    @media (min-width: map-get($grid-breakpoints, md)) {
         flex-direction: row;
         align-items: unset;
     }
@@ -17,7 +17,11 @@
 .services-content {
     padding: 5rem 2rem;
     @media (min-width: map-get($grid-breakpoints, sm)) {
+        padding: 0rem 4rem;
+    }
+    @media (min-width: map-get($grid-breakpoints, lg)) {
         padding: 11rem 5rem;
+
     }
     .subtitle {
         color: $white;
@@ -67,6 +71,7 @@
         cursor: pointer;
         background-color: $white;
         border: 0;
+        color: $black;
         img {
             position: relative;
             top: 3px;
@@ -117,9 +122,7 @@
         width: 100%;
     }
 }
-.services-content-wrapper {
-    position: relative;
-}
+
 .services-content-wrapper::after {
     content: "";
     position: absolute;

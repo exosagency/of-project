@@ -20,8 +20,9 @@
         font-weight: 600;
         cursor: pointer;
         span {
-            display: none;
+            font-size: 0.8rem;
             @media (min-width: map-get($grid-breakpoints, sm)) {
+                font-size: 1.3rem;
                 display: inline-block;
             }
         }

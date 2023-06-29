@@ -14,11 +14,13 @@
 
     .images {
         max-width: 100%;
+        width: 100%;
         img {
             width: 100%;
         }
 
         @media (min-width: map-get($grid-breakpoints, lg)) {
+            width: unset;
             max-width: 40%;
         }
     }
@@ -45,9 +47,8 @@
     padding: 5.8rem 6rem;
     background-color: #222;
     max-height: 600px;
-    max-width: 583px;
+    // max-width: 583px;
     @media (min-width: map-get($grid-breakpoints, lg)) {
-        max-width: unset;
         width: 60%;
         min-width: calc(100% - 583px);
     }

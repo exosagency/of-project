@@ -4,7 +4,7 @@ import twitter from "../../assets/twitter.png";
 import facebook from "../../assets/facebook.png";
 import send from "../../assets/send-1-svgrepo-com.svg";
 
-const footerNav = ["home", "services", "contact-us", "apply-now"];
+const footerNav = ["home", "services", "news", "apply-now"];
 
 const Footer = () => {
     const scrollTo = (e, item) => {

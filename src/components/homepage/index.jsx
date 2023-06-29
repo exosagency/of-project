@@ -15,16 +15,18 @@ const Homepage = () => {
     return (
         <div className="homepage-wrapper page-wrapper" id="homepage">
             <div className={`sidebar-wrapper ${isSideBarOpen ? "inverted" : ""}`}>
-                <div className="sidebar-countries">
-                    <p>USA</p>
-                    <img alt="line" src={line} />
-                    <p>AUS</p>
-                </div>
-                <div className="sidebar-discover">
-                    <p>discover</p>
-                    <button onClick={scrollToServices}>
-                        <img alt="arrow" src={arrow} />
-                    </button>
+                <div className="sidebar-content">
+                    <div className="sidebar-countries">
+                        <p>USA</p>
+                        <img alt="line" src={line} />
+                        <p>AUS</p>
+                    </div>
+                    <div className="sidebar-discover">
+                        <p>discover</p>
+                        <button onClick={scrollToServices}>
+                            <img alt="arrow" src={arrow} />
+                        </button>
+                    </div>
                 </div>
             </div>
             <main className="homepage-main">

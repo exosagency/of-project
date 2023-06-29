@@ -11,7 +11,7 @@
     z-index: 5;
     transition: 0.3s all;
     @media (min-width: map-get($grid-breakpoints, sm)) {
-        width: 80px;
+        width: 74px;
         height: 80px;
     }
 }
@@ -19,10 +19,12 @@
     height: 60px !important;
 }
 .hamburger-button {
-    display: inline-block;
+    display: block;
     cursor: pointer;
     background-color: $white;
     border: 0;
+    max-width: 100%;
+
 }
 
 .bar1,
