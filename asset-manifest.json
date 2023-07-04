@@ -1,22 +1,30 @@
 {
   "files": {
-    "main.css": "/of-project/static/css/main.a8308a17.css",
-    "main.js": "/of-project/static/js/main.31aa7c2e.js",
+    "main.css": "/of-project/static/css/main.46b179b0.css",
+    "main.js": "/of-project/static/js/main.f3b5f9c0.js",
     "static/js/787.f1c8016d.chunk.js": "/of-project/static/js/787.f1c8016d.chunk.js",
     "static/media/error-bg.jpg": "/of-project/static/media/error-bg.3dc1aa66fd1a29ea430e.jpg",
     "static/media/homepage-bg.jpg": "/of-project/static/media/homepage-bg.32abe99a6be0c339fdb0.jpg",
     "static/media/article-content.png": "/of-project/static/media/article-content.894bc4793f6094b5730c.png",
     "static/media/article-big.jpg": "/of-project/static/media/article-big.14da22d4c09918d30a4b.jpg",
     "static/media/services.png": "/of-project/static/media/services.a991c4b5c52012a0eb61.png",
+    "static/media/EmmaMartinez.png": "/of-project/static/media/EmmaMartinez.71c4658fc7f1e032e2a1.png",
     "static/media/img1.png": "/of-project/static/media/img1.9c1db16cd278e75c93bb.png",
     "static/media/img5.png": "/of-project/static/media/img5.38646c16ab99ff9a18d1.png",
+    "static/media/EveOwens.png": "/of-project/static/media/EveOwens.e3835bbf9d61de201383.png",
+    "static/media/AmaniNoor.png": "/of-project/static/media/AmaniNoor.5f428bad405017beba5c.png",
+    "static/media/AkiraKichii.png": "/of-project/static/media/AkiraKichii.ecdc89748a74f198a459.png",
     "static/media/img4.png": "/of-project/static/media/img4.668251d90dee3d991f69.png",
+    "static/media/AfricaLuxx.png": "/of-project/static/media/AfricaLuxx.4ead0a91189f01d62445.png",
     "static/media/img8.png": "/of-project/static/media/img8.82b40359110d16695359.png",
+    "static/media/ZoeWilder.png": "/of-project/static/media/ZoeWilder.5c812af0f09b98950f5f.png",
     "static/media/img7.png": "/of-project/static/media/img7.80f23a01921bbd905846.png",
     "static/media/contact-us.jpg": "/of-project/static/media/contact-us.002b4ea94f97cd784589.jpg",
     "static/media/img3.png": "/of-project/static/media/img3.af9d359c4ae7452a93a1.png",
+    "static/media/CherryBlossom.png": "/of-project/static/media/CherryBlossom.62d04aa1fbb70070b9f7.png",
     "static/media/img6.png": "/of-project/static/media/img6.806a236a028bddc06a74.png",
     "static/media/testimonials.jpg": "/of-project/static/media/testimonials.a8cbf3bd28503f601f31.jpg",
+    "static/media/KellyAdler.png": "/of-project/static/media/KellyAdler.b6677515d1f6cc9c5fcb.png",
     "static/media/img2.png": "/of-project/static/media/img2.44c3f67d7a4186fdb067.png",
     "static/media/img-2.jpg": "/of-project/static/media/img-2.210e5325eebb5da39076.jpg",
     "static/media/black-red.jpg": "/of-project/static/media/black-red.72f374877d482ca9ac12.jpg",
@@ -31,12 +39,12 @@
     "static/media/analytics-svgrepo-com.svg": "/of-project/static/media/analytics-svgrepo-com.8c7b036d231b975a7d4193ee810be3e5.svg",
     "static/media/phone-svgrepo-com.svg": "/of-project/static/media/phone-svgrepo-com.a493dafe9ddfd679f4716e50b575cec3.svg",
     "static/media/send-1-svgrepo-com.svg": "/of-project/static/media/send-1-svgrepo-com.5a579c0b6fe84333af8d5cdcfe32f2b7.svg",
-    "main.a8308a17.css.map": "/of-project/static/css/main.a8308a17.css.map",
-    "main.31aa7c2e.js.map": "/of-project/static/js/main.31aa7c2e.js.map",
+    "main.46b179b0.css.map": "/of-project/static/css/main.46b179b0.css.map",
+    "main.f3b5f9c0.js.map": "/of-project/static/js/main.f3b5f9c0.js.map",
     "787.f1c8016d.chunk.js.map": "/of-project/static/js/787.f1c8016d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8308a17.css",
-    "static/js/main.31aa7c2e.js"
+    "static/css/main.46b179b0.css",
+    "static/js/main.f3b5f9c0.js"
   ]
 }
