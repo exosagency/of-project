@@ -1,7 +1,7 @@
 import ContentSelection from "./ContentSelection";
-import managementImage from "../../assets/services.png";
 import { useState } from "react";
 import Slide from "./Slide";
+import { servicesContent } from "content/services";
 
 const ServicesPage = () => {
     const [selectedSlide, setSelectedSlide] = useState(0);
@@ -12,41 +12,14 @@ const ServicesPage = () => {
             <ContentSelection activePage={selectedSlide} setActivePage={setSelectedSlide} />
             <div className="slider">
                 <div className="slider-content" style={{ left: currentOffset + "vw" }}>
-                    <Slide
-                        img={managementImage}
-                        subtitle="Exos Agency"
-                        title="Management"
-                        text="With Exos Agency you can say goodbye to spending countless hours managing your fan
-                                    base subscription site and hello to unlocking freedom in your life"
-                    />
-                    <Slide
-                        img={managementImage}
-                        subtitle="Exos Agency"
-                        title="Content"
-                        text="With Exos Agency you can say goodbye to spending countless hours managing your fan
-                                    base subscription site and hello to unlocking freedom in your life"
-                    />
-                    <Slide
-                        img={managementImage}
-                        subtitle="Exos Agency"
-                        title="Social media"
-                        text="With Exos Agency you can say goodbye to spending countless hours managing your fan
-                                    base subscription site and hello to unlocking freedom in your life"
-                    />
-                    <Slide
-                        img={managementImage}
-                        subtitle="Exos Agency"
-                        title="Marketing"
-                        text="With Exos Agency you can say goodbye to spending countless hours managing your fan
-                                    base subscription site and hello to unlocking freedom in your life"
-                    />
-                    <Slide
-                        img={managementImage}
-                        subtitle="Exos Agency"
-                        title="Analytics"
-                        text="With Exos Agency you can say goodbye to spending countless hours managing your fan
-                                    base subscription site and hello to unlocking freedom in your life"
-                    />
+                    {servicesContent.map((content) => (
+                        <Slide
+                            img={content.img}
+                            subtitle={content.subtitle}
+                            title={content.title}
+                            text={content.text}
+                        />
+                    ))}
                 </div>
             </div>
         </>

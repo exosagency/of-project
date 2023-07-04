@@ -5,19 +5,16 @@ const NewsItem = ({ newsContent }) => {
     const { subtitle, title, image } = newsContent;
     return (
         <div className="news-item-wrapper">
-            {!!image ? (
-                <div className="news-image-wrapper">
-                    <img src={image} alt="news" />
-                </div>
-            ) : (
-                <div className="news-content-wrapper">
-                    <p className="news-item-subtitle">{subtitle}</p>
-                    <h2 className="news-item-title">{title}</h2>
-                    <Link className="read-more-btn" to={'/article/1'}>
-                        Read more <img src={arrowBtn} alt="arrow" />
-                    </Link>
-                </div>
-            )}
+            <div className="news-image-wrapper">
+                <img src={image} alt="news" />
+            </div>
+            <div className="news-content-wrapper">
+                <p className="news-item-subtitle">{subtitle}</p>
+                <h2 className="news-item-title">{title}</h2>
+                <Link className="read-more-btn" to={"/article/1"}>
+                    Read more <img src={arrowBtn} alt="arrow" />
+                </Link>
+            </div>
         </div>
     );
 };

@@ -32,7 +32,6 @@ const Footer = () => {
                         <br />
                         +1 805 402 5580
                         <br />
-                        Phoenix, AZ
                     </a>
                 </div>
                 <div className="footer-follow-wrapper">

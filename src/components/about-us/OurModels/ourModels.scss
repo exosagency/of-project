@@ -1,12 +1,24 @@
-
 .model-member {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5rem 5rem;
+    // padding: 5rem 5rem;
     font-size: 5rem;
     line-height: 6rem;
     font-family: $font-script;
     color: $white;
     outline: 1px solid $gray-text;
+    a {
+        display: inline-block;
+        cursor: pointer;
+    }
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.our-models-wrapper {
+    border-top: 2px solid $gray-border;
+    margin-top: -2px;
 }
