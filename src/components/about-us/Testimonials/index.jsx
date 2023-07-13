@@ -1,20 +1,17 @@
-import Img from "assets/about-us/testimonials.jpg";
 
-const Testimonials = ({ inverted }) => (
+const Testimonials = ({ inverted, name, image, link, text }) => (
     <div className={`testimonials-section-wrapper ${inverted ? "testimonials-section-wrapper-inverted" : ""}`}>
         <div className="images">
-            <img src={Img} alt="" />
+            <img src={image} alt={name} />
         </div>
         <div className="testimonials-content">
             <p className="testimonials-subtitle">testimonials</p>
-            <h2 className="testimonials-title">
-                "I didn't realize how much more money I could make until I started working alongside exos agency."
-            </h2>
+            <h2 className="testimonials-title">{text}</h2>
             <div className="testimoials-author">
-                <p className="author">Stella Reed</p>
+                <p className="author">{name}</p>
                 <p className="role">Content Creator</p>
-                <a className="link" href="https://www.onlyfans.com/stellareedxo" target="_blank" rel="noreferrer">
-                    www.onlyfans.com/stellareedxo
+                <a className="link" href={"https://www." + link} target="_blank" rel="noreferrer">
+                    {link}
                 </a>
             </div>
         </div>

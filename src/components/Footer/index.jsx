@@ -10,7 +10,6 @@ const Footer = () => {
     const scrollTo = (e, item) => {
         e.preventDefault();
         const topPosition = document.querySelector(`#${item}`)?.offsetTop;
-        console.log(item, topPosition);
         window.scrollTo({ top: topPosition - 60, behavior: "smooth" });
     };
     return (

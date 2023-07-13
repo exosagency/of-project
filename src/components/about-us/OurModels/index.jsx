@@ -9,14 +9,14 @@ import Africa from "assets/models/AfricaLuxx.png";
 import Akira from "assets/models/AkiraKichii.png";
 
 const clients = [
-    { name: "CherryBlossom", image: Cherry, link: "https://mtr.bio/cherry-blossom" },
-    { name: "AmaniNoor", image: Amani, link: "https://mtr.bio/amani-noor" },
-    { name: "ZoeWilder", image: Zoe, link: "https://mtr.bio/zoe-wilder" },
-    { name: "KellyAdler", image: Kelly, link: "https://mtr.bio/kelly-adler" },
+    { name: "CherryBlossom", image: Cherry, link: "https://onlyfans.com/cherryblossomvip/c3" },
+    { name: "AmaniNoor", image: Amani, link: "https://onlyfans.com/amaninoorfree/c2" },
+    { name: "ZoeWilder", image: Zoe, link: "https://onlyfans.com/zoewilderfree/c1" },
+    { name: "KellyAdler", image: Kelly, link: "https://onlyfans.com/itssexykelly/c5" },
     { name: "EmmaMartinez", image: Emma },
     { name: "EveOwens", image: Eve },
     { name: "AfricaLuxx", image: Africa },
-    { name: "AkiraKichii", image: Akira, link: "https://mtr.bio/akira-kichii" },
+    { name: "AkiraKichii", image: Akira, link: "https://onlyfans.com/akirakichii/c3" },
 ];
 const OurModels = () => {
     return (
