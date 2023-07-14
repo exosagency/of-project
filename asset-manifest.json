@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.css": "/of-project/static/css/main.71dde28d.css",
-    "main.js": "/of-project/static/js/main.9440b2f5.js",
+    "main.css": "/of-project/static/css/main.9f68c9bd.css",
+    "main.js": "/of-project/static/js/main.92002951.js",
     "static/js/787.f1c8016d.chunk.js": "/of-project/static/js/787.f1c8016d.chunk.js",
     "static/media/cherry.jpg": "/of-project/static/media/cherry.e156871b3b0fbf620a4a.jpg",
+    "static/media/analytics.jpg": "/of-project/static/media/analytics.896942e8c5c27b344a5c.jpg",
     "static/media/amani.jpg": "/of-project/static/media/amani.fcfa51b471d20a152373.jpg",
+    "static/media/content.jpg": "/of-project/static/media/content.111bac68f02fa3315b12.jpg",
+    "static/media/marketing.jpg": "/of-project/static/media/marketing.f6c0833af2435a492b7c.jpg",
     "static/media/error-bg.jpg": "/of-project/static/media/error-bg.3dc1aa66fd1a29ea430e.jpg",
     "static/media/homepage-bg.jpg": "/of-project/static/media/homepage-bg.32abe99a6be0c339fdb0.jpg",
     "static/media/zoe.jpg": "/of-project/static/media/zoe.6fdcc3d556a4afeb3f15.jpg",
-    "static/media/services.png": "/of-project/static/media/services.a991c4b5c52012a0eb61.png",
+    "static/media/social-media.jpg": "/of-project/static/media/social-media.d1c72ff4df709c60d636.jpg",
+    "static/media/management.png": "/of-project/static/media/management.a991c4b5c52012a0eb61.png",
     "static/media/kelly.jpg": "/of-project/static/media/kelly.64c5ecf157001823118b.jpg",
     "static/media/EmmaMartinez.png": "/of-project/static/media/EmmaMartinez.71c4658fc7f1e032e2a1.png",
     "static/media/img1.png": "/of-project/static/media/img1.9c1db16cd278e75c93bb.png",
@@ -35,12 +39,12 @@
     "static/media/analytics-svgrepo-com.svg": "/of-project/static/media/analytics-svgrepo-com.8c7b036d231b975a7d4193ee810be3e5.svg",
     "static/media/phone-svgrepo-com.svg": "/of-project/static/media/phone-svgrepo-com.a493dafe9ddfd679f4716e50b575cec3.svg",
     "static/media/send-1-svgrepo-com.svg": "/of-project/static/media/send-1-svgrepo-com.5a579c0b6fe84333af8d5cdcfe32f2b7.svg",
-    "main.71dde28d.css.map": "/of-project/static/css/main.71dde28d.css.map",
-    "main.9440b2f5.js.map": "/of-project/static/js/main.9440b2f5.js.map",
+    "main.9f68c9bd.css.map": "/of-project/static/css/main.9f68c9bd.css.map",
+    "main.92002951.js.map": "/of-project/static/js/main.92002951.js.map",
     "787.f1c8016d.chunk.js.map": "/of-project/static/js/787.f1c8016d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.71dde28d.css",
-    "static/js/main.9440b2f5.js"
+    "static/css/main.9f68c9bd.css",
+    "static/js/main.92002951.js"
   ]
 }
