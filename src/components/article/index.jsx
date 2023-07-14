@@ -81,7 +81,12 @@ const Article = () => {
                     <div className="next-article-wrapper">
                         <p className="subtitle">next article</p>
                         <h2 className="next-article-link title">
-                            <Link to={"/article/" + nextBlog.id}>{nextBlog.title}</Link>
+                            <Link
+                                to={"/article/" + nextBlog.id}
+                                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                            >
+                                {nextBlog.title}
+                            </Link>
                         </h2>
                     </div>
                 </div>

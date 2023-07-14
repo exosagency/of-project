@@ -18,7 +18,7 @@ const Overlay = ({ isOpen, setIsOverlayOpen }) => {
                 <Link to="/#contact-us" onClick={() => setIsOverlayOpen(false)}>
                     Contact
                 </Link>
-                <Link to="/#applyNow" onClick={() => setIsOverlayOpen(false)}>
+                <Link to="/#apply-now" onClick={() => setIsOverlayOpen(false)}>
                     Apply Now
                 </Link>
             </nav>

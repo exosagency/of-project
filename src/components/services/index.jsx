@@ -12,8 +12,9 @@ const ServicesPage = () => {
             <ContentSelection activePage={selectedSlide} setActivePage={setSelectedSlide} />
             <div className="slider">
                 <div className="slider-content" style={{ left: currentOffset + "vw" }}>
-                    {servicesContent.map((content) => (
+                    {servicesContent.map((content, index) => (
                         <Slide
+                            key={index}
                             img={content.img}
                             subtitle={content.subtitle}
                             title={content.title}

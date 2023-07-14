@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import logo from "../../../assets/logo.png";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { MyContext } from "MyContext";
 
 const FixedHeader = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
+    const { setIsSideBarOpen } = useContext(MyContext);
 
     const handleScroll = () => {
         const position = window.pageYOffset;
@@ -24,7 +26,7 @@ const FixedHeader = () => {
                 <img alt="logo" src={logo}></img>
             </Link>
             {/* <SocialMediaList /> */}
-            <Link className="apply-now-btn" type="button" to="/#apply-now">
+            <Link className="apply-now-btn" type="button" to="/#apply-now" onClick={() => setIsSideBarOpen(false)}>
                 Apply now
             </Link>
         </header>

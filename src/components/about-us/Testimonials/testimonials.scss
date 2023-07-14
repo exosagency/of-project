@@ -73,7 +73,7 @@
     color: $white;
     font-size: 2rem;
     line-height: 3rem;
-    text-transform: uppercase;
+    font-weight: 600;
     letter-spacing: 1px;
     margin: 2.2rem 0 3.5rem;
     @media (min-width: map-get($grid-breakpoints, sm)) {
