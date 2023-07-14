@@ -1,7 +1,7 @@
-import cherry from "assets/testimonials/cherry.jpg";
-import amani from "assets/testimonials/amani.jpg";
-import kelly from "assets/testimonials/kelly.jpg";
-import zoe from "assets/testimonials/zoe.jpg";
+import cherry from "./assets/testimonials/cherry.jpg";
+import amani from "./assets/testimonials/amani.jpg";
+import kelly from "./assets/testimonials/kelly.jpg";
+import zoe from "./assets/testimonials/zoe.jpg";
 
 export const testimonials = [
     {

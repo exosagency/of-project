@@ -1,6 +1,5 @@
-import managementImage from "assets/services.png";
+import managementImage from "./assets/services/services.png";
 
-// When you have single quotes in text (') you need to add \ in front of it like this: I\'l check it
 export const servicesContent = [
     {
         img: managementImage,

@@ -1,4 +1,4 @@
-import image1 from "assets/news/img1.png";
+import image1 from "../assets/news/img1.png";
 export const blog1 = {
     id: 1,
     title: "Top 5 Tactics To Gain High Paying Subscribers on OnlyFans",

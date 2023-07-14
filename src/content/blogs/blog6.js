@@ -1,4 +1,4 @@
-import image6 from "assets/news/img6.png";
+import image6 from "../assets/news/img6.png";
 
 export const blog6 = {
     id: 6,
