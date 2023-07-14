@@ -8,9 +8,14 @@
     max-width: 1240px;
     display: flex;
     padding: 0 2rem 2rem;
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+        padding: 0 1rem 1rem;
+    }
     @media (min-width: map-get($grid-breakpoints, md)) {
         margin-top: 7rem;
+        padding: 0 2rem 2rem;
     }
+
     > div {
         width: 100%;
         @media (min-width: map-get($grid-breakpoints, sm)) {
@@ -24,6 +29,14 @@
         color: $white;
         margin: 0 0 5px 0;
         font-weight: 600;
+        @media (min-width: map-get($grid-breakpoints, sm)) {
+            font-size: 22px;
+            line-height: 36px;
+        }
+        @media (min-width: map-get($grid-breakpoints, md)) {
+            font-size: 28px;
+            line-height: 48px;
+        }
     }
 }
 
@@ -112,6 +125,12 @@
     }
     a:not(:last-child) {
         margin-right: 10px;
+        @media (min-width: map-get($grid-breakpoints, sm)) {
+            margin-right: 3px;
+        }
+        @media (min-width: map-get($grid-breakpoints, lg)) {
+            margin-right: 10px;
+        }
     }
 }
 

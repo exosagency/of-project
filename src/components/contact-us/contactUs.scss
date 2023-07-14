@@ -29,7 +29,7 @@
     max-height: auto;
     max-width: 620px;
     @media (min-width: map-get($grid-breakpoints, sm)) {
-        padding: 9rem 5rem;
+        padding: 8rem 5rem;
         max-height: 600px;
     }
     @media (min-width: map-get($grid-breakpoints, lg)) {
@@ -63,6 +63,10 @@
             font-size: 4rem;
             line-height: 6rem;
             text-align: unset;
+        }
+        a {
+            text-decoration: none;
+            color: $white;
         }
     }
 

@@ -66,10 +66,16 @@ body {
     }
 }
 .sidebar-content {
-    padding: 160px 0 80px;
+    padding: 150px 0 80px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+        padding: 0 20px;
+        margin-bottom: 50px;
+        padding: 150px 0 80px;
+
+    }
 }
 .sidebar-wrapper p {
     color: $white;
@@ -81,7 +87,7 @@ body {
 }
 
 .sidebar-countries {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     img {
         position: relative;
         left: 18px;
@@ -90,7 +96,7 @@ body {
 
     @media (min-width: map-get($grid-breakpoints, sm)) {
         padding: 0 20px;
-        // margin-bottom: 0px;
+        margin-bottom: 50px;
     }
 }
 

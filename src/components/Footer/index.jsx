@@ -27,25 +27,24 @@ const Footer = () => {
                 <div className="footer-contact-wrapper">
                     <h3>Contact</h3>
                     <a href="">
-                        info@exos.agency
+                        <a href="mailto: info@exos.agency">info@exos.agency</a>
                         <br />
-                        +1 805 402 5580
-                        <br />
+                        <a href="tel:+1 805 402 5580">+1 805 402 5580</a> <br />
                     </a>
                 </div>
                 <div className="footer-follow-wrapper">
                     <h3>Follow us</h3>
                     <div className="social-media-footer">
-                        <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                        <a href="https://www.instagram.com/exos.agency/" target="_blank" rel="noreferrer">
                             <img alt="instagram" src={insta} />
                         </a>
-                        <a href="https://tiktok.com" target="_blank" rel="noreferrer">
+                        <a href="https://www.tiktok.com/@exos.agency" target="_blank" rel="noreferrer">
                             <img alt="tiktok" src={tiktok} />
                         </a>
-                        <a href="https://twitter.com" target="_blank" rel="noreferrer">
+                        <a href="https://twitter.com/exos_agency" target="_blank" rel="noreferrer">
                             <img alt="twitter" src={twitter} />
                         </a>
-                        <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                        <a href="https://www.facebook.com/exosagency" target="_blank" rel="noreferrer">
                             <img alt="facebook" src={facebook} />
                         </a>
                     </div>

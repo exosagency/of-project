@@ -20,9 +20,9 @@ const ContactUs = () => {
                     <div className="contact-us-content">
                         <h2 className="subtitle">our info</h2>
                         <h2 className="title">
-                            info@exos.agency
+                            <a href="mailto: info@exos.agency">info@exos.agency</a>
                             <br />
-                            +1 805 402 5580
+                            <a href="tel:+1 805 402 5580">+1 805 402 5580</a>
                             <br />
                         </h2>
                     </div>
