@@ -26,11 +26,11 @@ const Footer = () => {
                 </div>
                 <div className="footer-contact-wrapper">
                     <h3>Contact</h3>
-                    <a href="">
+                    <div>
                         <a href="mailto: info@exos.agency">info@exos.agency</a>
                         <br />
                         <a href="tel:+1 805 402 5580">+1 805 402 5580</a> <br />
-                    </a>
+                    </div>
                 </div>
                 <div className="footer-follow-wrapper">
                     <h3>Follow us</h3>

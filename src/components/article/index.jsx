@@ -14,7 +14,7 @@ const Article = () => {
     }, []);
 
     useEffect(() => {
-        const activeBlog = blogs.find((item) => item.id == id);
+        const activeBlog = blogs.find((item) => item.id === +id);
         if (id >= blogs.length) {
             setNextBlog(blogs[0]);
         } else {

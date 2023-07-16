@@ -37,7 +37,7 @@ const ContactForm = () => {
         const newErrors = { ...errorMessage };
         let isValid = true;
         Object.keys(formData).forEach((key) => {
-            if (key != "lastName" && formData[key] === "") {
+            if (key !== "lastName" && formData[key] === "") {
                 isValid = false;
                 newErrors[key] = "This input field is required.";
             }

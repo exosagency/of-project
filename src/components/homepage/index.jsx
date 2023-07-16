@@ -1,7 +1,6 @@
 import line from "../../assets/line.png";
 import arrow from "../../assets/arrow-2.png";
 import arrowBtn from "../../assets/arrow.png";
-import longLine from "../../assets/line-2.png";
 import { useContext } from "react";
 import { MyContext } from "MyContext";
 
