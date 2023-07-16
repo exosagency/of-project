@@ -1,10 +1,12 @@
-import image3 from "../assets/news/img3.png";
+import image3 from "../assets/blogs/img3.png";
+import banner from "../assets/blogs/large/BlogPost3.png";
 
 export const blog3 = {
     id: 3,
     title: "Make More Money on OnlyFans: Strategies to Maximize Your Earnings",
     date: "May 1st, 2023",
     image: image3,
+    heroImg: banner,
     text: "The popularity of OnlyFans as a platform for content creators continues to rise, and with it comes the opportunity to monetize your unique skills and content. Whether you're a model, artist, fitness enthusiast, or have expertise in any other niche, maximizing your earnings on OnlyFans requires strategic planning, consistent effort, and innovative approaches. In this comprehensive guide, we will explore effective strategies, tips, and techniques to help you make more money on OnlyFans. From optimizing your content to leveraging marketing tactics, we'll cover all the essential aspects to boost your earnings potential.",
     content: [
         {

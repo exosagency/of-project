@@ -1,10 +1,12 @@
-import image2 from "../assets/news/img2.png";
+import image2 from "../assets/blogs/img2.png";
+import banner from "../assets/blogs/large/BlogPost2.png";
 
 export const blog2 = {
     id: 2,
     title: "Why Work with an OnlyFans Management Agency: Unlocking the Potential of Your OnlyFans",
     date: "May 16th, 2023",
     image: image2,
+    heroImg: banner,
     text: "OnlyFans has become a game-changer in the adult entertainment industry, offering content creators a unique platform to connect with fans and monetize their exclusive content. However, the journey to success on OnlyFans can be challenging and time-consuming, requiring strategic planning, effective marketing, and constant engagement with your audience. This is where an OnlyFans management agency, such as the Los Angeles OnlyFans Agency, can make a significant difference. In this blog post, we will explore the reasons why working with an OnlyFans management agency can help you grow your OnlyFans, make more money, attract more subscribers, and leverage the power of social media to expand your reach.",
     content: [
         {

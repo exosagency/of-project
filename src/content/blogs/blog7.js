@@ -1,10 +1,12 @@
-import image7 from "../assets/news/img7.png";
+import image7 from "../assets/blogs/img7.png";
+import banner from "../assets/blogs/large/BlogPost7.png";
 
 export const blog7 = {
     id: 7,
     title: "Mastering Content Creation: How to Create Engaging and Exclusive Content for Your OnlyFans",
     date: "March 3rd, 2023",
     image: image7,
+    heroImg: banner,
     content: [
         {
             text: [

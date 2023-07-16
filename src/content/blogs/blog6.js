@@ -1,4 +1,5 @@
-import image6 from "../assets/news/img6.png";
+import image6 from "../assets/blogs/img6.png";
+import banner from "../assets/blogs/large/BlogPost6.png";
 
 export const blog6 = {
     id: 6,
@@ -6,6 +7,7 @@ export const blog6 = {
     date: "March 17th, 2023",
     text: "Social media has become an indispensable tool for content creators and influencers looking to expand their reach and grow their OnlyFans subscriber base. With billions of active users across various platforms, social media provides a powerful avenue to connect with a wider audience and promote your OnlyFans content. In this blog post, we will explore the strategies and tactics that can help you harness the power of social media to maximize your growth on OnlyFans. From creating engaging content to leveraging platform-specific features, we'll dive into the world of effective social media marketing and uncover the key principles for success.",
     image: image6,
+    heroImg: banner,
     content: [
         {
             subtitle: "1. Define Your Target Audience:",

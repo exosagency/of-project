@@ -1,4 +1,5 @@
-import image8 from "../assets/news/img8.png";
+import image8 from "../assets/blogs/img8.png";
+import banner from "../assets/blogs/large/BlogPost8.png";
 
 export const blog8 = {
     id: 8,
@@ -6,6 +7,7 @@ export const blog8 = {
     date: "February 28th, 2023",
     image: image8,
     text: "In the digital age, building a strong personal brand is crucial for success in various industries. OnlyFans, a popular content subscription platform, offers creators the opportunity to monetize their unique content and connect with a dedicated fan base. By building a strong personal brand on OnlyFans, creators can establish themselves as industry leaders, attract a loyal subscriber base, and increase their earning potential. In this ultimate guide, we will explore the key strategies and tactics to help you build a strong personal brand on OnlyFans.",
+    heroImg: banner,
     content: [
         {
             subtitle: "1. Define Your Brand Identity",

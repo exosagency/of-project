@@ -29,7 +29,7 @@ const Article = () => {
                 <div className="article-wrapper">
                     <p className="article-subtitle">{blog.date}</p>
                     <h2 className="article-title">{blog.title}</h2>
-                    <img src={blog.image} alt="" />
+                    <img src={blog.heroImg} alt="" />
                     <div className="article-content">
                         {blog.content.map((item, index) => (
                             <React.Fragment key={index}>

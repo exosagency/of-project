@@ -1,4 +1,5 @@
-import image5 from "../assets/news/img5.png";
+import image5 from "../assets/blogs/img5.png";
+import banner from "../assets/blogs/large/BlogPost5.png";
 
 export const blog5 = {
     id: 5,
@@ -6,6 +7,7 @@ export const blog5 = {
     date: "April 2nd, 2023",
     text: "Building a thriving subscriber base on OnlyFans requires a strategic approach and a multi-platform presence. In this article, we will explore various big and small ways to gain subscribers on OnlyFans, along with specific examples for each platform. By implementing these strategies, content creators can attract and retain loyal fans, maximize their earning potential, and create a sustainable online presence.",
     image: image5,
+    heroImg: banner,
     content: [
         {
             subtitle: "1. Leveraging Social Media Platforms:",

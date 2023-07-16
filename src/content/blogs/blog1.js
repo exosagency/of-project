@@ -1,9 +1,11 @@
-import image1 from "../assets/news/img1.png";
+import image1 from "../assets/blogs/img1.png";
+import banner from "../assets/blogs/large/BlogPost1.png";
 export const blog1 = {
     id: 1,
     title: "Top 5 Tactics To Gain High Paying Subscribers on OnlyFans",
     date: "July 1st, 2023",
     image: image1,
+    heroImg: banner,
     text: "In the ever-evolving world of adult entertainment, OnlyFans has emerged as a revolutionary platform for content creators to connect with their fans and monetize their exclusive content. However, with the increasing number of creators on OnlyFans, it's crucial to employ effective strategies to stand out from the crowd and attract high-paying subscribers. In this blog post, we will explore the top five tactics to grow your OnlyFans, maximize your earnings, and build a loyal subscriber base. Whether you're a seasoned creator or just starting your OnlyFans journey, these tactics will help you gain traction and increase your revenue.",
     content: [
         {

@@ -1,10 +1,12 @@
-import image4 from "../assets/news/img4.png";
+import image4 from "../assets/blogs/img4.png";
+import banner from "../assets/blogs/large/BlogPost4.png";
 
 export const blog4 = {
     id: 4,
     title: "Best OnlyFans Management Agencies in Los Angeles",
     date: " April 14th, 2023",
     image: image4,
+    heroImg: banner,
     text: [
         "In the world of OnlyFans, having the right management agency can make a significant difference in your success as a creator. An experienced and dedicated agency can provide you with the necessary support, guidance, and resources to maximize your earnings and reach a wider audience. However, with the growing popularity of OnlyFans, the market is saturated with management agencies claiming to offer top-notch services.",
         "This makes it crucial for creators to know what to look for when choosing an OnlyFans management agency. In this comprehensive guide, we will explore the key factors to consider before entrusting your OnlyFans career to an agency.",
