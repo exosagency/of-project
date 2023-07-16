@@ -1,7 +1,7 @@
 {
   "name": "of-project",
   "version": "1.0",
-  "homepage": "https://obradZ.github.io/of-project",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
