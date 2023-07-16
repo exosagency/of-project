@@ -1,9 +1,9 @@
 @import "__global.scss";
 
-@import "/src/components/homepage/homepage.scss";
-@import "/src/components/homepage/header/header.scss";
-@import "/src/components//homepage/HamburgerButton/hamburgerButton.scss";
-@import "/src/components/homepage/Overlay/overlay.scss";
+@import "homepage.scss";
+@import "header.scss";
+@import "hamburgerButton.scss";
+@import "overlay.scss";
 
 @import "/src/components/Header/mainHeader.scss";
 @import "/src/components/Footer/footer.scss";
