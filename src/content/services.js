@@ -1,8 +1,8 @@
-import managementImage from "./assets/services/management.png";
-import socialMedia from "./assets/services/social-media.jpg";
-import analytics from "./assets/services/analytics.jpg";
-import marketing from "./assets/services/marketing.jpg";
-import content from "./assets/services/content.jpg";
+import managementImage from "./assets/services/management.webp";
+import socialMedia from "./assets/services/socialMedia.webp";
+import analytics from "./assets/services/analytics.webp";
+import marketing from "./assets/services/marketing.webp";
+import content from "./assets/services/content.webp";
 
 
 
