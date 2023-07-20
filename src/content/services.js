@@ -11,7 +11,7 @@ export const servicesContent = [
         img: managementImage,
         subtitle: "Exos Agency",
         title: "Management",
-        text: 'Same one, girl with the girl at the beach "Boost your OnlyFans success with our special services for managing your profile. We\'ll help you enhance your unique style and connect with your fans, so you can grow your audience and achieve greater success!"',
+        text: 'Boost your OnlyFans success with our special services for managing your profile. We\'ll help you enhance your unique style and connect with your fans, so you can grow your audience and achieve greater success!',
     },
     {
         img: content,

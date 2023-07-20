@@ -1,4 +1,4 @@
-import image6 from "../assets/blogs/img6.png";
+import image6 from "../assets/blogs/img6.webp";
 import banner from "../assets/blogs/large/BlogPost6.png";
 
 export const blog6 = {
