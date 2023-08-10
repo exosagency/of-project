@@ -3,12 +3,12 @@ import tiktok from "../../assets/tiktok.png";
 import twitter from "../../assets/twitter.png";
 import facebook from "../../assets/facebook.png";
 import send from "../../assets/send-1-svgrepo-com.svg";
+import { Link } from "react-router-dom";
 
 const footerNav = ["home", "services", "news", "apply-now"];
 
 const Footer = () => {
-    const scrollTo = (e, item) => {
-        e.preventDefault();
+    const scrollTo = (item) => {
         const topPosition = document.querySelector(`#${item}`)?.offsetTop;
         window.scrollTo({ top: topPosition - 60, behavior: "smooth" });
     };
@@ -18,9 +18,9 @@ const Footer = () => {
                 <div className="footer-nav">
                     {footerNav.map((item) => (
                         <div key={item}>
-                            <button onClick={(e) => scrollTo(e, item)} type="button">
+                            <Link to={`/#${item}`} onClick={(e) => scrollTo(item)} type="button">
                                 {item.split("-").join(" ")}
-                            </button>
+                            </Link>
                         </div>
                     ))}
                 </div>

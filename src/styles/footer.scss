@@ -48,7 +48,8 @@
     @media (min-width: map-get($grid-breakpoints, sm)) {
         align-items: unset;
     }
-    button {
+    button,
+    a {
         color: $white;
         font-size: 28px;
         line-height: 48px;

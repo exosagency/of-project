@@ -70,7 +70,6 @@ body {
         padding: 0 20px;
         margin-bottom: 50px;
         padding: 150px 0 80px;
-
     }
 }
 .sidebar-wrapper p {
@@ -97,7 +96,8 @@ body {
 }
 
 .sidebar-discover {
-    button {
+    button,
+    a {
         cursor: pointer;
         background-color: transparent;
         display: inline-block;
@@ -171,14 +171,14 @@ body {
     color: $white;
     margin: 0.7rem 0 2.9rem;
     padding-left: 0;
-    br{
+    br {
         display: none;
     }
     @media (min-width: map-get($grid-breakpoints, sm)) {
         max-width: unset;
         font-size: 2rem;
         line-height: 3.4rem;
-        br{
+        br {
             display: unset;
         }
     }
@@ -196,6 +196,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.3rem;
     cursor: pointer;
+    text-decoration: none;
     img {
         margin-left: 2rem;
     }

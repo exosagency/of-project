@@ -20,13 +20,19 @@ const FixedHeader = () => {
         };
     }, []);
 
+    const scrollToApplyNow = () => {
+        const servicesPosition = document.querySelector("#apply-now")?.offsetTop;
+        window.scrollTo({ top: servicesPosition - 60, behavior: "smooth" });
+        setIsSideBarOpen(false);
+    };
+
     return (
         <header className={`homepage-header ${scrollPosition > 60 ? "scrolled-header" : ""}`}>
             <Link to={"/"} className="logo-link">
                 <img alt="logo" src={logo}></img>
             </Link>
             {/* <SocialMediaList /> */}
-            <Link className="apply-now-btn" type="button" to="/#apply-now" onClick={() => setIsSideBarOpen(false)}>
+            <Link className="apply-now-btn" type="button" to="/#apply-now" onClick={() => scrollToApplyNow()}>
                 Apply now
             </Link>
         </header>

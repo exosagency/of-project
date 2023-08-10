@@ -3,6 +3,7 @@ import arrow from "../../assets/arrow-2.png";
 import arrowBtn from "../../assets/arrow.png";
 import { useContext } from "react";
 import { MyContext } from "MyContext";
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
     const { isSideBarOpen } = useContext(MyContext);
@@ -22,9 +23,9 @@ const Homepage = () => {
                     </div>
                     <div className="sidebar-discover">
                         <p>discover</p>
-                        <button onClick={scrollToServices}>
+                        <Link to={"/#services"} type="button" onClick={scrollToServices}>
                             <img alt="arrow" src={arrow} />
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -37,9 +38,9 @@ const Homepage = () => {
                     At EXOS Agency our partners are enabled to reach
                     <br /> the pinnacle of success withing the fan-base subscription market
                 </p>
-                <button className="learn-more-btn" onClick={() => scrollToServices()}>
+                <Link to="/#services" className="learn-more-btn" onClick={() => scrollToServices()}>
                     Learn more <img alt="arrow" src={arrowBtn} />
-                </button>
+                </Link>
             </main>
             <footer className="homepage-footer">
                 {/* <div> */}

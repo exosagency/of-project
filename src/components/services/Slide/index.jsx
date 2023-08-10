@@ -1,8 +1,8 @@
+import { Link } from "react-router-dom";
 import arrowBtn from "../../../assets/arrow.png";
 
 const Slide = ({ img, subtitle, title, text }) => {
-    const scrollToContactUs = (e) => {
-        e.preventDefault();
+    const scrollToContactUs = () => {
         const servicesPosition = document.querySelector("#contact-us")?.offsetTop;
         window.scrollTo({ top: servicesPosition - 60, behavior: "smooth" });
     };
@@ -16,9 +16,9 @@ const Slide = ({ img, subtitle, title, text }) => {
                     <h2 className="subtitle">{subtitle}</h2>
                     <h2 className="title">{title}</h2>
                     <p>{text}</p>
-                    <button onClick={scrollToContactUs} type="button">
+                    <Link to={"/#contact-us"} onClick={() => scrollToContactUs()} type="button">
                         Contact us <img src={arrowBtn} alt="arrow" />
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>
