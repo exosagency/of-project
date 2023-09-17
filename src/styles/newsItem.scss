@@ -19,7 +19,7 @@
             flex-direction: row-reverse !important;
         }
     }
-    a{
+    a {
         text-decoration: none;
     }
 }
@@ -47,6 +47,15 @@
     @media (min-width: map-get($grid-breakpoints, sm)) {
         width: 50%;
     }
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        padding: 0.5rem 2rem;
+    }
+    @media (min-width: map-get($grid-breakpoints, xl)) {
+        padding: 1.5rem 2rem;
+    }
+    @media (min-width: map-get($grid-breakpoints, xl2)) {
+        padding: 2rem 2rem;
+    }
     p {
         color: $gray-text;
         text-transform: uppercase;
@@ -59,6 +68,19 @@
         font-size: 2.4rem;
         line-height: 3.2rem;
         margin: 1rem 0;
+        @media (min-width: map-get($grid-breakpoints, lg)) {
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+        }
+        @media (min-width: map-get($grid-breakpoints, xl)) {
+            font-size: 2rem;
+            line-height: 2.7rem;
+        }
+
+        @media (min-width: map-get($grid-breakpoints, xxl)) {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+        }
     }
     .read-more-btn {
         cursor: pointer;

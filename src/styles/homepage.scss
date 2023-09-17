@@ -71,6 +71,17 @@ body {
         margin-bottom: 50px;
         padding: 150px 0 80px;
     }
+    @media (min-height: 500px) {
+        padding: 10px 0 80px;
+    }
+    @media (min-height: 750px) {
+        padding: 150px 0 80px;
+    }
+    @media (hover: none) {
+        @media (min-height: 50px) {
+            padding: 150px 0 80px !important;
+        }
+    }
 }
 .sidebar-wrapper p {
     color: $white;
